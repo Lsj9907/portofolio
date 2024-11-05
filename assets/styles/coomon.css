@@ -31,9 +31,10 @@
     --menu-icon-width: 55%;
     --menu-list-gap: 7px;
 
-    --about-padding-y: 125px;
-    --about-padding-y-sm: 70px;
+    --about-padding-y: 80px;
     --about-padding-x: 25px;
+    --about-content-width: 900px;
+    --about-list-gap : 20px;
 }
 .grid-container {
     display: grid;

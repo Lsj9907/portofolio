@@ -106,39 +106,51 @@ body {
     position: absolute;
     bottom: 0; left: 11vw;
 }
-.desk-canvas img {
-    width: inherit;
-}
 .desk-canvas .computer{
+    position: relative;
     gap: var(--menu-gap);
 }
-.desk-canvas .computer li a {
-    display: block;
+.desk-canvas .computer .light {
+    width: 6vw;
+    position: absolute;
+    bottom: -2px;
 }
-.desk-canvas .computer li:first-child a {
-    transform: translate(1vw, 0.2vw);
+.desk-canvas .computer .computer-leg {
+    width: 3.5vw;
+    position: absolute;
+    bottom: 0; right: 7vw;
+    z-index: -99;
 }
-.desk-canvas .computer li:last-child a {
-    transform: translate(0.5vw, 0.5vw);
+.desk-canvas .computer .computer-set a{
+    width: 14vw;
+    position: absolute;
+    top: -9vw; right: 2vw;
 }
 
-.dog{
-    position: absolute;
-    grid-column: 2 / 3;
-    bottom: 0; left: 25%;;
+.desk {
+    width: 22vw;
 }
-.dog img {
-    width: inherit;
+
+
+/* 캐릭터 */
+.dog{
+    position: relative;
+    grid-column: 2 / 3;
+}
+.dog .mydog{
+    position: absolute;
+    bottom: -8px; left: 10%;
 }
 .house-canvas {
     grid-column: 3 / 4;
+    position: relative;
 }
 .house-canvas img {
     width: inherit;
 }
-.house-canvas .flower-dance {
+.house-canvas .flower {
     position: absolute;
-    bottom: 0;
+    bottom: -7px; left: -2vw;
 }
 .house-canvas .dog-house {
     position: absolute;

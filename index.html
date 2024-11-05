@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./assets/styles/coomon.css">
     <!-- style -->
     <link rel="stylesheet" href="./index.css">
+    <!-- script -->
+    <script src="./assets/scripts/lottie.min.js"></script>
 </head>
 
 <body>
@@ -27,9 +29,9 @@
     <div class="menu-items">
         <a href="" class="menu-nav">메뉴</a>
         <ul class="menu-list grid-container">
-            <li><a href=""><img src="./images/menu-home.svg" alt="home"></a></li>
-            <li><a href=""><img src="./images/menu-user.svg" alt="user"></a></li>
-            <li><a href=""><img src="./images/menu-folder.svg" alt="folder"></a></li>
+            <li><a href="./index.html"><img src="./images/menu-home.svg" alt="home"></a></li>
+            <li><a href="./about.html"><img src="./images/menu-user.svg" alt="user"></a></li>
+            <li><a href="./project/projectplace.html"><img src="./images/menu-folder.svg" alt="folder"></a></li>
             <li><a href=""><img src="./images/menu-mail.svg" alt="e-mail"></a></li>
         </ul>
     </div>
@@ -37,16 +39,16 @@
     <!-- 위쪽 영역 -->
     <section class="top-wrapper grid-container">
         <!-- 소개 액자 -->
-        <div class="aboutme-line grid-container"">
+        <div class="aboutme-line grid-container">
             <div class=" photo">
-            <a href="">aboutme</a>
-        </div>
-        <!-- 포스트잇 -->
-        <ul class="post-iems flex-container">
-            <li><img src="./images/pos-js.png" alt="자바"></li>
-            <li><img src="./images/ps-css.png" alt="css"></li>
-            <li><img src="./images/ps-re.png" alt="리액트"></li>
-        </ul>
+                <a href="./about.html">aboutme</a>
+            </div>
+            <!-- 포스트잇 -->
+            <ul class="post-iems flex-container">
+                <li><img src="./images/pos-js.png" alt="자바"></li>
+                <li><img src="./images/ps-css.png" alt="css"></li>
+                <li><img src="./images/ps-re.png" alt="리액트"></li>
+            </ul>
         </div>
         <!-- 소셜, 포스터 영역 -->
         <div class="favorite-canvas grid-container">
@@ -71,32 +73,69 @@
     <section class="under-wrapper grid-container">
         <!-- 책상 영역 -->
         <div class="desk-canvas">
-            <ul class="computer flex-container">
-                <li><a href=""><img src="./images/전등.png" alt="전등"></a></li>
-                <li><a href=""><img src="./images/컴퓨터.png" alt="컴퓨터"></a></li>
-            </ul>
+            <div class="computer flex-container">
+                <img src="./images/전등.svg" alt="전등" class="light">
+                <div class="computer-set">
+                    <a href=""><img src="./images/컴퓨터머리.svg" class="computer-top" alt="컴퓨터머리"></a>
+                    <!-- <div id="computer" style="width: 100px; height: 100px; display: none;"></div> -->
+                    <img src="./images/컴퓨터다리.svg" class="computer-leg" alt="컴퓨터다리">
+                </div>
+            </div>
             <!-- 책상 -->
             <div class="desk">
-                <img src="./images/desk.png" alt="책상">
+                <img src="./images/desk.svg" alt="책상">
             </div>
         </div>
-        </div>
         <!-- 내 캐릭터  -->
-        <div id="dog" class="dog">
-            <img src="./images/나.png" alt="나">
+        <div class="dog">
+            <div id="mydog" class="mydog"></div>
         </div>
         <!-- 강아지집, 꽃 -->
         <div class="house-canvas flex-container">
             <!-- 꽃 -->
             <div class="flower-dance">
-                <img src="./images/flower.png" alt="꽃">
+                <div id="flower" class="flower"></div>
             </div>
             <!-- 강아지집 -->
             <div class="dog-house">
-                <img src="./images/강아지집1.png" alt="강아지집1">
+                <img src="./images/강아지집1.svg" alt="강아지집1">
             </div>
         </div>
     </section>
+
+    <script>
+        const mydog = lottie.loadAnimation({
+            container: document.getElementById('mydog'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: './assets/lotties/강아지.json'
+        });
+
+
+        const flower = lottie.loadAnimation({
+            container: document.getElementById('flower'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: './assets/lotties/flower.json'
+        });
+
+        const computer = lottie.loadAnimation({
+            container: document.getElementById('computer'), // Lottie 애니메이션을 표시할 컨테이너
+            path: '애니메이션_파일.json', // Lottie JSON 파일 경로
+            renderer: 'svg',
+            loop: false, // 반복 여부
+            autoplay: false // 자동 재생 여부
+        });
+
+        document.getElementById('mySvg').addEventListener('click', function () {
+            // Lottie 컨테이너 표시 및 애니메이션 재생
+            const lottieContainer = document.getElementById('lottieContainer');
+            lottieContainer.style.display = 'block'; // Lottie 컨테이너 보이기
+            lottieAnimation.goToAndPlay(0); // 애니메이션 처음부터 재생
+        });
+    </script>
 </body>
 
 </html>
