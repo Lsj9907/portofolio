@@ -2,8 +2,8 @@
 
 body {
     height: 100vh;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 .textbox {
     width: 100%;
@@ -66,12 +66,9 @@ body {
 .box-wrapper .box {
     border: 1px solid #000;
 }
-
-.mycharacter {
-    width: 100%;
+.prodog {
     position: absolute;
-    bottom: -20%;
-}
-.mycharacter img{
-    height: 55vh;
+    bottom: -9vw; left: 0; right: 0;
+    margin: 0 auto;
+    width: 23vw;
 }

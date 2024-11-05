@@ -3,7 +3,7 @@
 
 body {
     height: 100vh;
-    padding: var(--about-padding-y) var(--about-padding-x); 
+    padding: 50px var(--about-padding-x); 
 }
 .about-box {
     width: var(--about-content-width);

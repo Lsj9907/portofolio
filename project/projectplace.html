@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../assets/styles/coomon.css">
     <!-- style -->
     <link rel="stylesheet" href="./projectplace.css">
+    <!-- script -->
+    <script src="../assets/scripts/lottie.min.js"></script>
 </head>
 
 <body>
@@ -58,9 +60,17 @@
             </div>
         </div>
     </div>
-    <div class="mycharacter">
-        <img src="../images/나2.svg" alt="나">
-    </div>
+    <div id="prodog" class="prodog"></div>
+
+    <script>
+        const prodog = lottie.loadAnimation({
+            container: document.getElementById('prodog'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '../assets/lotties/프로젝트강아지.json'
+        });
+   </script>
 </body>
 
 </html>
