@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* Good Sans.css */
+
+@font-face {
+  font-family:'GoodSans';
+  src: local('Good Sans Regular'), 
+    url(../fonts/AnyConv.com__Good\ Sans\ Regular.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family:'GoodSans';
+  src: local('Good Sans thin'), 
+    url(../fonts/63cfaa3dbe5baef4af7205d08677773c.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+}
+@font-face {
+  font-family:'GoodSans';
+  src: local('Good Sans blak'), 
+    url(../fonts/AnyConv.com__Good-Sans-Black.woff2) format('woff2');
+  font-style: bold;
+  font-display: swap;
+  font-weight: 800;
+}

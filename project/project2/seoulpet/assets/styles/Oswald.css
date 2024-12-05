@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* Oswald.css */
+
+@font-face {
+  font-family:'Oswald';
+  src: local('Oswald-Light'), 
+    url(../fonts/AnyConv.com__Oswald-Light.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}

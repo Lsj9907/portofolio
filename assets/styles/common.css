@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/**** fonts ****/
+/* {font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP', sans-serif;} */
+@import url(./SpoqaHanSan.css);
+/* {font-family: "Nunito", serif; } */
+@import url(./Nunito.css);
+/* font-family: "Anton", serif; */
+@import url(./Anton.css);
+
+:root {
+    /* font */
+    --font-main-ko: 'Spoqa Han Sans Neo', Impact, Haettenschweiler, sans-serif;
+    --font-main-en: "Nunito", Impact, Haettenschweiler, sans-serif;
+    --font-main-title: "Anton", Georgia, 'Times New Roman', Times, serif;
+    /* color */
+    --color-peach: #ffdde6;
+    --color-peach-light: #ef99b1;
+    --color-peach-dark: #f67499;
+    --color-purple: #d5a7d9;
+    --color-green: #0F8954;
+    --color-blue: #0F558D;
+
+    --color-white: #fff;
+    --color-smooth-black: #222;
+
+    --menu-width: 60px;
+    --menu-gap: 25px;
+    --menu-item-width: 46px;
+    --menu-item-padding: 7px;
+    --menu-icon-width: 55%;
+    --menu-list-gap: 7px;
+
+    --about-padding-y: 80px;
+    --about-padding-x: 25px;
+    --about-content-width: 1400px;
+    --about-list-gap : 20px;
+
+
+    --project-title-lg : 60px; 
+    --project-title-md : 40px; 
+    --project-title-sm : 24px;
+    --project-title-xsm : 20px;
+}
+.grid-container {
+    display: grid;
+}
+.flex-container {
+    display: flex;
+}
+.no-drag {
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+html {
+    background-color: var(--color-peach);
+    font-family: var(--font-main-ko);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-smooth-black);
+}
+
+.menu-items{
+    z-index: 999999;
+    width: var(--menu-width);
+    background-color: var(--color-white);
+    position: fixed;
+    top: var(--menu-gap); right: var(--menu-gap);
+    border-radius: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.menu-items .menu-nav {
+    display: block;
+    border-radius: 50%;
+    width: var(--menu-width);
+    height: var(--menu-width);
+    padding: var(--menu-item-padding);
+    place-content: center;
+}
+.menu-items .menu-list {
+    width: 100%;
+    padding: var(--menu-item-padding);
+    gap: var(--menu-list-gap);
+}
+.menu-items .menu-list a {
+    width: var(--menu-item-width);
+    height: var(--menu-item-width);
+    display: block;
+    border-radius: 50%;
+    background-color: var(--color-peach);
+    place-content: center;
+}
+.menu-items .menu-list a img {
+    width: var(--menu-icon-width);
+}

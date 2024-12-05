@@ -12,9 +12,10 @@
     <!-- resect -->
     <link rel="stylesheet" href="./assets/styles/reset.min.css">
     <!-- common -->
-    <link rel="stylesheet" href="./assets/styles/coomon.css">
+    <link rel="stylesheet" href="./assets/styles/common.css">
     <!-- style -->
-    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./about.css"><!-- script -->
+    <script src="./assets/scripts/lottie.min.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,18 @@
     </div>
     <div class="about-box">
         <div class="name-card flex-container">
-            <div class="img-card">
+            <div class="img-wrapper flex-container no-drag">
+                <div class="dog-ear flex-container">
+                    <div id="left" class="left-dog"></div>
+                    <div id="right" class="right-dog"></div>
+                </div>
+                <div class="hand-container flex-container">
+                    <img src="./images/강아지손.svg" alt="손1">
+                    <img src="./images/강아지손.svg" alt="손2">
+                </div>
+                <div class="img-card">
+                    <img src="./images/about강쥐.svg" alt="강아지">
+                </div>
             </div>
             <div class="text-card">
                 <span class="myname">이수진</span>
@@ -89,7 +101,7 @@
                         가독성)</li>
                 </ul>
             </div>
-            <div class="skill-box5 line-box" >
+            <div class="skill-box5 line-box">
                 <h3>Ect</h3>
                 <ul>
                     <li>UI 디자인</li>
@@ -106,6 +118,22 @@
             </div>
         </section>
     </div>
+    <script>
+        const right = lottie.loadAnimation({
+            container: document.getElementById('right'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: './assets/lotties/오른쪽귀.json'
+        });
+        const left = lottie.loadAnimation({
+            container: document.getElementById('left'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: './assets/lotties/왼쪽귀.json'
+        });
+    </script>
 </body>
 
 </html>

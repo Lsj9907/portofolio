@@ -12,7 +12,7 @@
     <!-- resect -->
     <link rel="stylesheet" href="./assets/styles/reset.min.css">
     <!-- common -->
-    <link rel="stylesheet" href="./assets/styles/coomon.css">
+    <link rel="stylesheet" href="./assets/styles/common.css">
     <!-- style -->
     <link rel="stylesheet" href="./index.css">
     <!-- script -->
@@ -37,7 +37,7 @@
     </div>
 
     <!-- 위쪽 영역 -->
-    <section class="top-wrapper grid-container">
+    <div class="top-wrapper grid-container">
         <!-- 소개 액자 -->
         <div class="aboutme-line grid-container">
             <a href="./about.html">
@@ -67,14 +67,14 @@
                 <img id="poster" src="./images/포스터.svg" alt="포스터1" onclick="changeposter()">
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- 아래쪽 영역 -->
-    <section class="under-wrapper grid-container">
+    <div class="under-wrapper grid-container">
         <!-- 책상 영역 -->
         <div class="desk-canvas">
             <div class="computer flex-container">
-                <div class=light-wrapper" id="clickableImage">
+                <div class="light-wrapper" id="clickableImage">
                     <!-- 기본 이미지 -->
                     <img src="./images/전등.svg" alt="Default Image" class="light-img">
                     <!-- Lottie 애니메이션을 표시할 컨테이너 -->
@@ -95,7 +95,7 @@
             </div>
         </div>
         <!-- 내 캐릭터  -->
-        <div class="dog flex-container">
+        <div class="dog">
             <div class="eye-container flex-container">
                 <div class="eye ey1">
                     <div class="pupil"></div>
@@ -117,7 +117,7 @@
                 <img id="doghouse" src="./images/강아지집1.svg" alt="이미지 1" onclick="changeImage()">
             </div>
         </div>
-    </section>
+    </div>
 
     <script>
         const mydog = lottie.loadAnimation({
@@ -239,23 +239,23 @@
 
         const pupils = document.querySelectorAll('.pupil');
 
-document.addEventListener('mousemove', (event) => {
-    pupils.forEach(pupil => {
-        const eyeRect = pupil.parentElement.getBoundingClientRect();
-        const eyeCenterX = eyeRect.left + eyeRect.width / 2;
-        const eyeCenterY = eyeRect.top + eyeRect.height / 2;
-        const deltaX = event.clientX - eyeCenterX;
-        const deltaY = event.clientY - eyeCenterY;
-        const angle = Math.atan2(deltaY, deltaX);
+        document.addEventListener('mousemove', (event) => {
+            pupils.forEach(pupil => {
+                const eyeRect = pupil.parentElement.getBoundingClientRect();
+                const eyeCenterX = eyeRect.left + eyeRect.width / 2;
+                const eyeCenterY = eyeRect.top + eyeRect.height / 2;
+                const deltaX = event.clientX - eyeCenterX;
+                const deltaY = event.clientY - eyeCenterY;
+                const angle = Math.atan2(deltaY, deltaX);
 
-        // 눈 크기에 맞춰 동공의 이동 거리 제한
-        const maxDistanceX = (eyeRect.width - pupil.offsetWidth) / 2;
-        const maxDistanceY = (eyeRect.height - pupil.offsetHeight) / 2;
-        const distance = Math.min(maxDistanceX, Math.sqrt(deltaX ** 2 + deltaY ** 2));
+                // 눈 크기에 맞춰 동공의 이동 거리 제한
+                const maxDistanceX = (eyeRect.width - pupil.offsetWidth) / 2;
+                const maxDistanceY = (eyeRect.height - pupil.offsetHeight) / 2;
+                const distance = Math.min(maxDistanceX, Math.sqrt(deltaX ** 2 + deltaY ** 2));
 
-        pupil.style.transform = `translate(-50%, -50%) translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`;
-    });
-});
+                pupil.style.transform = `translate(-50%, -50%) translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`;
+            });
+        });
     </script>
 </body>
 
