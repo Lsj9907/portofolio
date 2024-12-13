@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>project2</title>
+    <!-- favicon -->
+    <!-- og -->
+    <!-- resect -->
+    <link rel="stylesheet" href="../../assets/styles/reset.min.css">
+    <!-- common -->
+    <link rel="stylesheet" href="../../assets/styles/common.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./project3.css">
+    <!-- script -->
+</head>
+
+<body>
+    <!-- 메뉴 -->
+    <div class="menu-items">
+        <a href="" class="menu-nav">메뉴</a>
+        <ul class="menu-list grid-container">
+            <li><a href="../../index.html"><img src="../../images/menu-home.svg" alt="home"></a></li>
+            <li><a href="../../about.html"><img src="../../images/menu-user.svg" alt="user"></a></li>
+            <li><a href="./../projectplace.html"><img src="../../images/menu-folder.svg" alt="folder"></a></li>
+            <li><a href=""><img src="../../images/menu-mail.svg" alt="e-mail"></a></li>
+        </ul>
+    </div>
+
+    <!-- 메인 -->
+    <section class="main">
+        <div class=" txt-wrapper">
+            <h2>StudioDragon<br>
+                리디자인 & 퍼블리싱</h2>
+            <p>StudioDragon Responsive Web Redesign &  Publishing
+                <br>100% 개인작업
+            </p>
+        </div>
+    </section>
+    <!-- overview -->
+    <section class="overview">
+        <h2 class="title-name"><span class="num">01</span>Overview</h2>
+        <p><strong>스튜디오드래곤</strong>은 <strong>창의적 스토리텔링</strong>과 <strong>고품질 콘텐츠 제작</strong>으로 <strong>글로벌 드라마 시장</strong>을 <strong>선도</strong>하는 한국의 제작사입니다</p>
+        <p>이를 통해 <strong>브랜드를 창의적</strong>으로 재해석하고, <strong>GSAP</strong>를 사용해 <strong>직관적이고 현대적인 디자인</strong>을 구현했습니다<br>
+            다양한 디바이스에서 최적화된 경험을 제공하며, <strong>Studio Dragon</strong>의 <strong>핵심 가치</strong>를 강조했습니다</p>
+    </section>
+
+    <!-- Style guide -->
+    <section class="guide">
+        <h2 class="title-name"><span class="num">02</span>Style guide</h2>
+        <div class="guide-wrapper grid-container">
+            <div class="box flex-container">
+                <h3 class="sub-title">keywords</h3>
+                <img src="./images/keyword.svg" alt="키워드">
+            </div>
+            <div class="box flex-container">
+                <h3 class="sub-title">color</h3>
+                <img src="./images/color.svg" alt="컬러">
+            </div>
+            <div class="box flex-container">
+                <h3 class="sub-title">typography</h3>
+                <img src="./images/typo.svg" alt="타이포">
+            </div>
+            <div class="box flex-container">
+                <h3 class="sub-title">Drag & Drop</h3>
+                <p>드래그 기능을 필요한 영역에만 표시하여 UI를 간결하고 직관적으로 제작</p>
+                <img src="./images/drag.svg" alt="로고">
+            </div>
+        </div>
+    </section>
+
+    <!-- 퍼블리싱 -->
+    <section class="publishing">
+        <h2 class="title-name"><span class="num">03</span>Publishing</h2>
+        <div class="puble-wrapper grid-container">
+            <div class="box">
+                <h3 class="sub-title">GSAP & JavaScript</h3>
+                <ul class="box-list flex-container">
+                    <li>애니메이션은 타임라인 기반으로 텍스트, 이미지 등 요소에 부드럽고 효율적으로 적용되어, 복잡한 애니메이션도 간편하게 관리하고 최적화함</li>
+                    <li>GSAP와 JavaScript의 조합을 통해 시각적으로 흥미로운 전환과 상호작용을 제공하며, 사용자는 더 직관적이고 몰입감 있는 경험을 제공</li>
+                    <li>드래그 기능과 같은 동적인 상호작용을 처리하여 사용자가 실시간으로 페이지와 직관적으로 상호작용할 수 있도록 함</li>
+                    <li>사용자 입력에 반응하여 콘텐츠의 스크롤이나 움직임을 제어함으로써 페이지의 흐름을 자연스럽고 매끄럽게 유지</li>
+                    <li>페이지의 전반적인 사용자 경험을 향상시키며, 사이트의 동적인 요소에 생동감을 부여</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 문제 솔루션 -->
+    <section class="problem">
+        <div class="txt-box">
+            <h2 class="title-name ti1"><span>P</span>roblem &</h2>
+            <h2 class="title-name ti2"><span>S</span>olution</h2>
+        </div>
+        <div class="ps1">
+            <h3 class="ps-title"># 스크롤에 따라 헤더의 스타일을 동적으로 변화시키는 방법</h3>
+            <p>스크롤시 해당 영역에 따라 해더의 Nav 스타일이 변경 됨</p>
+            <p class="txt-push">&bull; 스크립트 사용으로 스크롤에 따라 헤더 배경과 테두리를 동적으로 변경하고, 사용자가 내리면 헤더를 숨기며 올리면 다시 표시되도록 애니메이션을 적용,</p>
+            <p class="txt-push2">특정 영역에 도달하면 로고와 헤더 색상을 변경하는 방식으로 사용자 경험을 향상</p>
+            <img src="./images/솔루션1.svg" alt="솔루션1">
+        </div>
+        <div class="ps2">
+            <h3 class="ps-title"># 스크롤 애니메이션 제어와 시각적 변화를 동기화하는 방법</h3>
+            <p>스크롤을 하며 화면의 영역이 변경 될 때 사용자에게 스크롤시 화면이 변환된다는 시각적 효과를 줌</p>
+            <p class="txt-push">&bull; start와 end로 애니메이션이 시작하고 끝나는 스크롤 위치를 설정</p>
+            <p class="txt-push">&bull; scrub: 0.2는 스크롤에 따라 애니메이션의 속도를 부드럽게 조정</p>
+            <p class="txt-push">&bull; ease: "power4.out"는 애니메이션의 끝을 부드럽게 만드는 이징 함수 사용</p>
+            <p class="txt-push">&bull;borderRadius로 둥글게 변화는 효과를 줌</p>
+            <p class="txt-push">&bull; css로 z-index값으로 순서를 주어 컨텐츠가 올라오면서 영역을 가리는 효과를 제거</p>
+            <img src="./images/솔루션2.svg" alt="솔루션2">
+        </div>
+        <div class="ps3">
+            <h3 class="ps-title"># 마우스 이벤트로 hover시 컨텐츠가 옆으로 빠지는 효과</h3>
+            <p>원형 모양의 컨텐츠가 정해진 영역에서 사라져야 하는 효과를 줘야 했기에 css hover 효과가 아닌 스크립트를 사용</p>
+            <p class="txt-push">&bull; 요소를 2개를 만들어 CSS사용 및 absolute를 사용하여 두개를 미리 합쳐 놓음</p>
+            <p class="txt-push">&bull; 요소 2개를 묶을 수 있는 부모요소를 만들어 놓고 컨텐츠의 크기와 똑같이 만듦</p>
+            <p class="txt-push">&bull; 스크립트를 통해 사용자가 해당 영역에 마우스를 올리면 위에 있떤 요소가 오른쪽으로 이동하고, 마우스를 떼면 원위치로 돌아오도록 함</p>
+            <img src="./images/솔루션3.svg" alt="솔루션3">
+        </div>
+    </section>
+    <section class="review">
+        <h2 class="title-name"><span class="num">04</span>Review</h2>
+        <div class="review-wrapper">
+            <div class="review-box">
+                <span><strong>1. 프로젝트와 디자인 흥미</strong></span>
+                <p>드라마 제작사 관련 프로젝트를 진행하면서 내가 좋아하는 드라마들과 관련된 디자인을 하게 되어 질리지 않고 재미있게 작업할 수 있었습니다.<br>인물이 많이 들어간 프로젝트를 처음했는데 그로인해 디자인과 제작사 포스터들이 페이지에 흥미를 더해 몰입할 수 있었습니다.</p>
+            </div>
+            <div class="review-box">
+                <span><strong>2. GSAP 사용 경험</strong></span>
+                <p>처음으로 GSAP를 사용해 페이지 제작을 해야 한다고 생각 했을 때는 막막하다는 생각이들었지만 막상 GSAP를 사용해보니,<br>스크립트만으로 작업하는 것보다  GSAP를 활용한다면 쉽고 재미있게 다양한 효과를 추가할 수 있다는 점을 느꼈습니다.</p>
+            </div>
+            <div class="review-box">
+                <span><strong>3. 스크립트와 GSAP 활용의 가능성</strong></span>
+                <p>이번 프로젝트를 통해서 스크립트와 GSAP를 활용하며 다양한 시각적 효과를 구현할 수 있다는 점을 알게 되었고,<br>이를 통해 더 다양한 사용자 경험을 제공하고 싶다는 생각을 하게 되었습니다</p>
+            </div>
+            
+        <a href="./studiodragon/index.html">퍼블리싱 보러가기</a>
+        </div>
+    </section>
+    <footer>
+        <p>tank you for watching!</p>
+    </footer>
+</body>
+
+</html>
