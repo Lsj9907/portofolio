@@ -112,16 +112,13 @@ body {
 .desk-canvas .computer {
     position: relative;
 }
-.light-img {
-    position: absolute;
-    width: inherit;
-    bottom: -0.15vw; left: 1vw;
-    cursor: pointer;
+
+#light {
+    position: relative;
+    transform: translateY(2px);
 }
+
 .light-container {
-    position: absolute;
-    bottom: -0.5vw; left: 1.25vw;
-    object-fit: cover;
     cursor: pointer;
 }
 

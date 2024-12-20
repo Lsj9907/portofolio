@@ -82,9 +82,9 @@
         <!-- 책상 영역 -->
         <div class="desk-canvas">
             <div class="computer flex-container">
-                <div class="light-wrapper" id="clickableImage">
+                <div class="light-wrapper flex-container" id="clickableImage">
                     <!-- 기본 이미지 -->
-                    <img src="./images/전등.svg" alt="Default Image" class="light-img">
+                    <div class="light-container2" id="light2"></div>
                     <!-- Lottie 애니메이션을 표시할 컨테이너 -->
                     <div class="light-container" id="light"></div>
                 </div>
@@ -162,35 +162,6 @@
             computer.stop(); // Lottie 애니메이션 멈추기
         });
 
-        const light = lottie.loadAnimation({
-            container: document.getElementById('light'), // Lottie 애니메이션을 표시할 컨테이너
-            path: './assets/lotties/조명.json', // Lottie JSON 파일 경로
-            renderer: 'svg',
-            loop: true, // 반복 여부
-            autoplay: true // 자동 재생 여부
-        });
-
-        // 현재 상태 추적 변수
-        let isImageVisible = true;
-
-        // 클릭 이벤트 설정
-        const clickableImage = document.getElementById('clickableImage');
-        clickableImage.addEventListener('click', () => {
-            if (isImageVisible) {
-                // 이미지가 보이는 상태 -> Lottie 애니메이션으로 변경
-                clickableImage.querySelector('img').style.display = 'none'; // 기본 이미지 숨기기
-                document.getElementById('light').style.display = 'block'; // Lottie 애니메이션 표시
-                light.play(); // Lottie 애니메이션 재생
-            } else {
-                // Lottie 애니메이션이 보이는 상태 -> 이미지로 변경
-                light.stop(); // Lottie 애니메이션 멈추기
-                clickableImage.querySelector('img').style.display = 'block'; // 기본 이미지 표시
-                document.getElementById('light').style.display = 'none'; // Lottie 애니메이션 숨기기
-            }
-            isImageVisible = !isImageVisible; // 상태 토글
-        });
-
-
         const about = lottie.loadAnimation({
             container: document.getElementById('about'), // Lottie 애니메이션을 표시할 컨테이너
             path: './assets/lotties/about.json', // Lottie JSON 파일 경로
@@ -263,6 +234,54 @@
 
                 pupil.style.transform = `translate(-50%, -50%) translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`;
             });
+        });
+
+        let currentAnimation = 'light'; // 애니메이션 상태를 저장할 변수
+        let light = lottie.loadAnimation({
+            container: document.getElementById('light'),
+            path: './assets/lotties/조명.json', // 첫 번째 애니메이션 파일
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            rendererSettings: {
+                preserveAspectRatio: 'xMidYMid slice', // 비율 유지
+                clearCanvas: true // 캔버스 초기화
+            }
+        });
+
+        // 클릭 시 애니메이션 교차 전환
+        document.getElementById('light').addEventListener('click', function () {
+            if (currentAnimation === 'light') {
+                // 'light' 애니메이션에서 다른 애니메이션으로 전환
+                light.destroy(); // 기존 애니메이션 종료
+                light = lottie.loadAnimation({
+                    container: document.getElementById('light'),
+                    path: './assets/lotties/전등.json', // 두 번째 애니메이션 파일
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    rendererSettings: {
+                        preserveAspectRatio: 'xMidYMid slice', // 비율 유지
+                        clearCanvas: true // 캔버스 초기화
+                    }
+                });
+                currentAnimation = 'new'; // 상태 업데이트
+            } else {
+                // 다른 애니메이션에서 'light' 애니메이션으로 전환
+                light.destroy(); // 기존 애니메이션 종료
+                light = lottie.loadAnimation({
+                    container: document.getElementById('light'),
+                    path: './assets/lotties/조명.json', // 원래 애니메이션 파일
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    rendererSettings: {
+                        preserveAspectRatio: 'xMidYMid slice', // 비율 유지
+                        clearCanvas: true // 캔버스 초기화
+                    }
+                });
+                currentAnimation = 'light'; // 상태 업데이트
+            }
         });
     </script>
 </body>
