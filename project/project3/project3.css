@@ -3,6 +3,7 @@
 html {
     background-color: var(--color-white);
     text-align: center;
+    font-family: var(--font-main-ko);
 }
 
 section {
