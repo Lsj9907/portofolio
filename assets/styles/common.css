@@ -10,7 +10,7 @@
 
 :root {
     /* font */
-    --font-main-ko: 'SpoqaHanSans', Impact, Haettenschweiler, sans-serif;
+    --font-main-ko: 'SpoqaHanSans', '맑은 고딕', Haettenschweiler, sans-serif;
     --font-main-en: "Nunito", Impact, Haettenschweiler, sans-serif;
     --font-main-title: "Anton", Georgia, 'Times New Roman', Times, serif;
     /* color */
