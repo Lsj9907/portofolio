@@ -88,15 +88,15 @@ header .mobile-menu .mobile-btn .bar2 {
     margin: 6px 0;
 }
 
-header .mobile-menu .mobile-btn.toggle-btn .bar1 {
+header .mobile-menu .mobile-btn .ch-btn.toggle-btn .bar1 {
     transform: translateY(8px) rotate(45deg);
 }
 
-header .mobile-menu .mobile-btn.toggle-btn .bar2 {
+header .mobile-menu .mobile-btn .ch-btn.toggle-btn .bar2 {
     transform: scale(0);
 }
 
-header .mobile-menu .mobile-btn.toggle-btn .bar3 {
+header .mobile-menu .mobile-btn .ch-btn.toggle-btn .bar3 {
     transform: translateY(-8px) rotate(-45deg);
 }
 

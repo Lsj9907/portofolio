@@ -75,6 +75,7 @@ html {
     text-align: center;
 }
 .menu-items .menu-nav {
+    cursor: pointer;
     display: block;
     border-radius: 50%;
     width: var(--menu-width);
@@ -82,11 +83,44 @@ html {
     padding: var(--menu-item-padding);
     place-content: center;
 }
+.menu-nav .ch-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-smooth-black);
+    place-self: center;
+}
+
+.menu-nav .ch-btn .bar2 {
+    width: 20px;
+    margin: 6px 0;
+}
+
+.menu-nav .ch-btn.toggle-btn .bar1 {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.menu-nav .ch-btn.toggle-btn .bar2 {
+    transform: scale(0);
+}
+
+.menu-nav .ch-btn.toggle-btn .bar3 {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 .menu-items .menu-list {
+    display: none;
     width: 100%;
     padding: var(--menu-item-padding);
     gap: var(--menu-list-gap);
 }
+.menu-items .menu-list.active {
+    display: grid;
+    width: 100%;
+    padding: var(--menu-item-padding);
+    gap: var(--menu-list-gap);
+}
+
 .menu-items .menu-list a {
     width: var(--menu-item-width);
     height: var(--menu-item-width);
