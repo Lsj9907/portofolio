@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>portofolio</title>
+    <!-- favicon -->
+
+    <!-- og -->
+
+    <!-- resect -->
+    <link rel="stylesheet" href="./assets/styles/reset.min.css">
+    <!-- common -->
+    <link rel="stylesheet" href="./assets/styles/common.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- script -->
+    <script src="./assets/scripts/lottie.min.js"></script>
+</head>
+
+<body>
+    <!-- 배경 타이틀 -->
+    <div class="backgound-title">
+        <h1>CREATIVE<br>PUBLISHER</h1>
+    </div>
+
+    <!-- 메뉴 -->
+    <div class="menu-items">
+        <a href="" class="menu-nav">메뉴</a>
+        <ul class="menu-list grid-container">
+            <li><a href="./index.html"><img src="./images/menu-home.svg" alt="home"></a></li>
+            <li><a href="./about.html"><img src="./images/menu-user.svg" alt="user"></a></li>
+            <li><a href="./project/projectplace.html"><img src="./images/menu-folder.svg" alt="folder"></a></li>
+            <li><a href=""><img src="./images/menu-mail.svg" alt="e-mail"></a></li>
+        </ul>
+    </div>
+
+    <!-- 위쪽 영역 -->
+    <div class="top-wrapper grid-container">
+        <!-- 소개 액자 -->
+        <div class="aboutme-line grid-container">
+            <a href="./about.html">
+                <div id="about" class="about-container"></div>
+            </a>
+            <!-- 포스트잇 -->
+            <ul class="post-iems flex-container">
+                <li><img src="./images/pos-js.svg" alt="자바"></li>
+                <li><img src="./images/ps-css.svg" alt="css"></li>
+                <li><img src="./images/ps-re.svg" alt="리액트"></li>
+            </ul>
+        </div>
+        <!-- 소셜, 포스터 영역 -->
+        <div class="favorite-canvas grid-container">
+            <!-- 소셜 -->
+            <div class="sociaol-wrapper">
+                <ul class="social-links grid-container">
+                    <li><a href=""><img src="./images/social-naver.svg" alt="네이버"></a></li>
+                    <li><a href=""><img src="./images/social-kakao.svg" alt="카카오"></a></li>
+                    <li><a href=""><img src="./images/social-gitgub.svg" alt="깃허브"></a></li>
+                </ul>
+                <div class="social-under"><img src="./images/social.png" alt="받침대">
+                </div>
+            </div>
+            <!-- 포스터 -->
+            <div class="poster-container">
+                <img id="poster" src="./images/포스터.svg" alt="포스터1" onclick="changeposter()">
+            </div>
+        </div>
+    </div>
+
+    <!-- 아래쪽 영역 -->
+    <div class="under-wrapper grid-container">
+        <!-- 책상 영역 -->
+        <div class="desk-canvas">
+            <div class="computer flex-container">
+                <div class="light-wrapper" id="clickableImage">
+                    <!-- 기본 이미지 -->
+                    <img src="./images/전등.svg" alt="Default Image" class="light-img">
+                    <!-- Lottie 애니메이션을 표시할 컨테이너 -->
+                    <div class="light-container" id="light"></div>
+                </div>
+                <div class="computer-set">
+                    <div class="com-wrapper" id="hoverImage">
+                        <a href="./project/projectplace.html">
+                            <div class="computer-container" id="computer"></div>
+                        </a>
+                    </div>
+                    <img src="./images/컴퓨터다리.svg" class="computer-leg" alt="컴퓨터다리">
+                </div>
+            </div>
+            <!-- 책상 -->
+            <div class="desk">
+                <img src="./images/desk.svg" alt="책상">
+            </div>
+        </div>
+        <!-- 내 캐릭터  -->
+        <div class="dog">
+            <div class="eye-container flex-container">
+                <div class="eye ey1">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye ey2">
+                    <div class="pupil"></div>
+                </div>
+            </div>
+            <div id="mydog" class="mydog"></div>
+        </div>
+        <!-- 강아지집, 꽃 -->
+        <div class="house-canvas flex-container">
+            <!-- 꽃 -->
+            <div class="flower-dance">
+                <div id="flower" class="flower"></div>
+            </div>
+            <!-- 강아지집 -->
+            <div class="dog-house">
+                <img id="doghouse" src="./images/강아지집1.svg" alt="이미지 1" onclick="changeImage()">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const mydog = lottie.loadAnimation({
+            container: document.getElementById('mydog'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: './assets/lotties/강아지.json'
+        });
+
+
+        const flower = lottie.loadAnimation({
+            container: document.getElementById('flower'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: './assets/lotties/flower.json'
+        });
+
+        const computer = lottie.loadAnimation({
+            container: document.getElementById('computer'), // Lottie 애니메이션을 표시할 컨테이너
+            path: './assets/lotties/컴퓨터머리.json', // Lottie JSON 파일 경로
+            renderer: 'svg',
+            loop: false, // 반복 여부
+            autoplay: false // 자동 재생 여부
+        });
+
+        const hoverImage = document.getElementById('hoverImage');
+        hoverImage.addEventListener('mouseenter', () => {
+            computer.play(); // Lottie 애니메이션 재생
+        });
+
+        hoverImage.addEventListener('mouseleave', () => {
+            computer.stop(); // Lottie 애니메이션 멈추기
+        });
+
+        const light = lottie.loadAnimation({
+            container: document.getElementById('light'), // Lottie 애니메이션을 표시할 컨테이너
+            path: './assets/lotties/조명.json', // Lottie JSON 파일 경로
+            renderer: 'svg',
+            loop: true, // 반복 여부
+            autoplay: true // 자동 재생 여부
+        });
+
+        // 현재 상태 추적 변수
+        let isImageVisible = true;
+
+        // 클릭 이벤트 설정
+        const clickableImage = document.getElementById('clickableImage');
+        clickableImage.addEventListener('click', () => {
+            if (isImageVisible) {
+                // 이미지가 보이는 상태 -> Lottie 애니메이션으로 변경
+                clickableImage.querySelector('img').style.display = 'none'; // 기본 이미지 숨기기
+                document.getElementById('light').style.display = 'block'; // Lottie 애니메이션 표시
+                light.play(); // Lottie 애니메이션 재생
+            } else {
+                // Lottie 애니메이션이 보이는 상태 -> 이미지로 변경
+                light.stop(); // Lottie 애니메이션 멈추기
+                clickableImage.querySelector('img').style.display = 'block'; // 기본 이미지 표시
+                document.getElementById('light').style.display = 'none'; // Lottie 애니메이션 숨기기
+            }
+            isImageVisible = !isImageVisible; // 상태 토글
+        });
+
+
+        const about = lottie.loadAnimation({
+            container: document.getElementById('about'), // Lottie 애니메이션을 표시할 컨테이너
+            path: './assets/lotties/about.json', // Lottie JSON 파일 경로
+            renderer: 'svg',
+            loop: false, // 반복 여부
+            autoplay: false // 자동 재생 여부
+        });
+        let hoverTimeout;
+
+        document.getElementById('about').addEventListener('mouseenter', function () {
+            hoverTimeout = setTimeout(() => {
+                about.play(); // 일정 시간 후 애니메이션 재생
+            }, 100); // 100ms 지연 후 실행 (지연 시간 조정 가능)
+        });
+
+        document.getElementById('about').addEventListener('mouseleave', function () {
+            clearTimeout(hoverTimeout); // 마우스를 떼면 지연을 취소
+            about.stop(); // hover를 떼면 애니메이션 정지
+            about.goToAndStop(0, true); // 애니메이션을 처음으로 되돌림
+        });
+
+        const poster = [
+            './images/포스터.svg',
+            './images/포스터2.svg',
+            './images/포스터3.svg',
+            './images/포스터4.svg'
+        ];
+
+        let currentIndex = 0; // 현재 이미지 인덱스
+
+        function changeposter() {
+            // 현재 인덱스를 증가시키고 배열의 길이로 나눈 나머지를 사용하여 순환
+            currentIndex = (currentIndex + 1) % poster.length;
+
+            // 이미지 변경
+            document.getElementById('poster').src = poster[currentIndex];
+        };
+
+        let currentImageIndex = 0; // 현재 이미지 인덱스
+        const doghouse = [
+            './images/강아지집1.svg',
+            './images/강아지집2.svg',
+            './images/강아지집3.svg',
+            './images/강아지집4.svg'
+        ];
+
+        function changeImage() {
+            // 다음 이미지 인덱스 계산
+            currentImageIndex = (currentImageIndex + 1) % doghouse.length;
+            const img = document.getElementById('doghouse');
+            img.src = doghouse[currentImageIndex]; // 현재 이미지 변경
+        };
+
+
+        const pupils = document.querySelectorAll('.pupil');
+
+        document.addEventListener('mousemove', (event) => {
+            pupils.forEach(pupil => {
+                const eyeRect = pupil.parentElement.getBoundingClientRect();
+                const eyeCenterX = eyeRect.left + eyeRect.width / 2;
+                const eyeCenterY = eyeRect.top + eyeRect.height / 2;
+                const deltaX = event.clientX - eyeCenterX;
+                const deltaY = event.clientY - eyeCenterY;
+                const angle = Math.atan2(deltaY, deltaX);
+
+                // 눈 크기에 맞춰 동공의 이동 거리 제한
+                const maxDistanceX = (eyeRect.width - pupil.offsetWidth) / 2;
+                const maxDistanceY = (eyeRect.height - pupil.offsetHeight) / 2;
+                const distance = Math.min(maxDistanceX, Math.sqrt(deltaX ** 2 + deltaY ** 2));
+
+                pupil.style.transform = `translate(-50%, -50%) translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`;
+            });
+        });
+    </script>
+</body>
+
+</html>

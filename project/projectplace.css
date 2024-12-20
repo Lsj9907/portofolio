@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+body {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.textbox {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: var(--menu-gap);
+    font-weight: 700;
+}
+.project-title{
+    font-size: 0.75rem;
+    padding: 2px var(--menu-list-gap);
+    border-radius: 10px;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+}
+.project-title2{
+    font-size: 0.75rem;
+    padding: 2px var(--menu-list-gap);
+    border-radius: 10px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+.project-date {
+    position: absolute;
+    right: var(--menu-gap);
+}
+.box-wrapper {
+    grid-template-columns: repeat(3, auto);
+    height: 100%;
+    padding: 50px 100px;
+    gap: var(--menu-gap);
+    box-sizing: border-box;
+}
+
+.box-wrapper .contain1 {
+    grid-column: 1 / 2;
+}
+.box-wrapper .box {
+    border-radius: 16px;
+    position: relative;
+}
+.box-wrapper .box1 {
+    height: 40%;
+    margin-bottom: var(--menu-gap);;
+}
+
+.box-wrapper .box2 {
+    height: 60%;
+}
+.box-wrapper .contain1 .box2{
+    background: url(../images/프로젝트2.png) no-repeat 100%/ cover;
+    border: none;
+}
+.box-wrapper .contain2 {
+    grid-column: 2 / 3;
+}
+
+.box-wrapper .contain2 .box1 {
+    margin-bottom: 0;
+    margin-top: var(--menu-gap);
+}
+.box-wrapper .contain2 .box2 {
+    background: url(../images/프로젝트1.png) no-repeat 100% / cover;
+    border: none;
+}
+    
+.box-wrapper .contain3 {
+    grid-column: 3 / 4;
+}
+.contain3 .box2 {
+    background: url(../images/프로젝트3.jpg) no-repeat 100% /cover;
+    background-position: center;
+    border: none;
+    color: var(--color-white);
+}
+.box-wrapper .box {
+    border: 1px solid #000;
+}
+.prodog {
+    position: absolute;
+    bottom: -9vw; left: 0; right: 0;
+    margin: 0 auto;
+    width: 23vw;
+}

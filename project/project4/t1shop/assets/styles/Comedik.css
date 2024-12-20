@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* Comedik.css */
+
+@font-face {
+    font-family: 'Comedik';
+    src: local('Comedik'), 
+      url(../fonts/Comedik.woff2) format('woff2');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+  }

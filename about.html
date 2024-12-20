@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>about</title>
+    <!-- favicon -->
+
+    <!-- og -->
+
+    <!-- resect -->
+    <link rel="stylesheet" href="./assets/styles/reset.min.css">
+    <!-- common -->
+    <link rel="stylesheet" href="./assets/styles/common.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./about.css"><!-- script -->
+    <script src="./assets/scripts/lottie.min.js"></script>
+</head>
+
+<body>
+    <!-- 메뉴 -->
+    <div class="menu-items">
+        <a href="" class="menu-nav">메뉴</a>
+        <ul class="menu-list grid-container">
+            <li><a href="./index.html"><img src="./images/menu-home.svg" alt="home"></a></li>
+            <li><a href="./about.html"><img src="./images/menu-user.svg" alt="user"></a></li>
+            <li><a href="./project/projectplace.html"><img src="./images/menu-folder.svg" alt="folder"></a></li>
+            <li><a href=""><img src="./images/menu-mail.svg" alt="e-mail"></a></li>
+        </ul>
+    </div>
+    <div class="about-box">
+        <div class="name-card flex-container">
+            <div class="img-wrapper flex-container no-drag">
+                <div class="dog-ear flex-container">
+                    <div id="left" class="left-dog"></div>
+                    <div id="right" class="right-dog"></div>
+                </div>
+                <div class="hand-container flex-container">
+                    <img src="./images/강아지손.svg" alt="손1">
+                    <img src="./images/강아지손.svg" alt="손2">
+                </div>
+                <div class="img-card">
+                    <img src="./images/about강쥐.svg" alt="강아지">
+                </div>
+            </div>
+            <div class="text-card">
+                <span class="myname">이수진</span>
+                <span>1999.07.13</span>
+                <p>안녕하세요 저는 웹퍼블리셔 이수진입니다.<br>
+                    모든 일에 최선을 다하겠습니다. 잘 부탁드립니다.
+                </p>
+                <span>Creative Publisher</span>
+                <ul class="adress flex-container">
+                    <li><a href="">E-mail</a></li>
+                    <li><a href="">Kakao Talk</a></li>
+                    <li><a href="">Git Hub</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 스킬 툴 -->
+        <div class="skill">
+            <img src="./images/skill.svg" alt="스킬">
+        </div>
+        <section class="skill-line grid-container">
+            <div class="skill-box1 line-box">
+                <h3>HTML5 & CSS3</h3>
+                <ul>
+                    <li>웹 접근성을 고려한 시맨틱 마크업</li>
+                    <li>미디어쿼리를 이용한 반응형 웹</li>
+                    <li>css를 이용한 스타일의 다양한 활용</li>
+                    <li>scss</li>
+                </ul>
+            </div>
+            <div class="skill-box2 line-box">
+                <h3>React</h3>
+                <ul>
+                    <li>css-modules</li>
+                    <li>Styled-Component</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+            <div class="skill-box3 line-box">
+                <h3>Tool</h3>
+                <ul>
+                    <li>Git,Github</li>
+                    <li>Figma - 프로토타입 제작</li>
+                    <li>photoshop & illustrator</li>
+                </ul>
+            </div>
+            <div class="skill-box4 line-box">
+                <h3>JavaScript & jQuery & GSAP</h3>
+                <ul>
+                    <li>ES6+ 문법</li>
+                    <li>DOM, BOM</li>
+                    <li>변수 및 함수의 유효 범위, 호이스팅, event.target 등의 실행 컨텍스트 이해</li>
+                    <li>효율적인 웹페이지 동작을 위한 비동기 처리 이해 및 활용</li>
+                    <li>비동기 함수(setTimeout, setInterval 등) 실행 순서 관리를 위한 이벤트 루프 의 이해</li>
+                    <li>비동기 통신 AJAX 활용 : $.ajax(), fetch, async/await를 이용한 데이터 처리 및 통신 구현 및 작업의 효율성 향상 (오류 처리 및 디버깅, 코드의
+                        가독성)</li>
+                </ul>
+            </div>
+            <div class="skill-box5 line-box">
+                <h3>Ect</h3>
+                <ul>
+                    <li>UI 디자인</li>
+                    <li>Lottie Animation</li>
+                </ul>
+            </div>
+            <div class="skill-box6 line-box">
+                <h3>Certificate</h3>
+                <ul>
+                    <li>운전면허 제 2종 보통</li>
+                    <li>청소년학습코칭 3급</li>
+                    <li>워드프로세스 3급</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script>
+        const right = lottie.loadAnimation({
+            container: document.getElementById('right'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: './assets/lotties/오른쪽귀.json'
+        });
+        const left = lottie.loadAnimation({
+            container: document.getElementById('left'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: './assets/lotties/왼쪽귀.json'
+        });
+    </script>
+</body>
+
+</html>

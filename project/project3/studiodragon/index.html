@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <title>Studio Dragon</title>
+    <!-- 리셋 -->
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/styles/common.css">
+    <!-- 내가 만든 css -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- js -->
+    <script src="./assets/scripts/jquery-3.7.1.min.js"></script>
+    <script src="./assets/scripts/jquery-ui.min.js"></script>
+    <script src="./assets/scripts/swiper-bundle.min.js"></script>
+    <script src="./assets/scripts/gsap.min.js"></script>
+    <script src="./assets/scripts/ScrollTrigger.min.js"></script>
+
+    <!-- 내가 만든 js -->
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="flex-container" id="header">
+            <div class="logo flex-container">
+                <a href="#" id="logo"><img src="./images/LOGO1.svg" alt="로고" id="img"></a>
+            </div>
+            <div class="menu flex-container">
+                <ul class="menu-wrapper flex-container ">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">IR</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="lang flex-container">
+                <ul class="lang-wrapper flex-container" id="lang2">
+                    <li><a href="#">KOR</a></li>
+                    <li><a href="#">ENG</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="video-box">
+            <video muted autoplay loop src="./video/studio_main.mp4"></video>
+        </div>
+        <div class="bottom-nav">
+            <ul class="bt-nav flex-container">
+                <li><a href="#">Contact US</a></li>
+                <li><svg width="40" height="11" viewBox="0 0 40 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.5" width="40" height="10" rx="5" fill="white" />
+                    </svg>
+                </li>
+                <li><a href="#">CJ Group</a></li>
+                <li><svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="5" cy="5.5" r="5" fill="white" />
+                    </svg>
+                </li>
+                <li><a href="#">CJ ENM</a></li>
+                <li><svg width="40" height="11" viewBox="0 0 40 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.5" width="40" height="10" rx="5" fill="white" />
+                    </svg>
+                </li>
+                <li><a href="#">O'PEN</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box"></div>
+        </div>
+        <section class="content-box1">
+            <!-- 프리미엄 스토리텔링 소개 박스 -->
+            <div class="pri-txt-box">
+                <h2 class="sub-title">"프리미엄 스토리텔링으로 더 가치 있는 세상을 만듭니다"</h2>
+                <h3 class="sub-title">스튜디오드래곤의 미션은 전 세계인들이 고감하는 콘텐츠를 통해 사회가 변화될 수<br> 있다고 믿고, 사회적 가치 창출을 극대화 할 수 있는 콘텐츠를
+                    만드는
+                    것 입니다</h3>
+            </div>
+
+            <!-- GSAP 흐르는 글씨 -->
+            <div class="background-blur">
+                <div class="slide-txt-wrapper">
+                    <div class="slide-txt flex-container">
+                        <span class="text">Premium Storyteller Group</span>
+                        <span class="separator">
+                            <svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg>
+                        </span>
+                        <span class="text">Premium Storyteller Group</span>
+                        <span class="separator">
+                            <svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg>
+                        </span>
+                        <span class="text">Premium Storyteller Group</span>
+                        <span class="text">Premium Storyteller Group</span>
+                        <span class="separator">
+                            <svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg>
+                        </span>
+                        <span class="text">Premium Storyteller Group</span>
+                        <span class="separator">
+                            <svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg>
+                        </span>
+                        <span class="text">Premium Storyteller Group</span>
+                        <span class="separator">
+                            <svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg>
+                        </span>
+                        <span class="text">Premium Storyteller Group</span>
+                        <span class="separator">
+                            <svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg>
+                        </span>
+                        <span class="text">Premium Storyteller Group</span>
+                        <span class="separator">
+                            <svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg>
+                        </span>
+                        <span class="text">Premium Storyteller Group</span>
+                        <span class="separator">
+                            <svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg>
+                        </span>
+                        <span class="text">Premium Storyteller Group</span>
+                        <span class="separator">
+                            <svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg>
+                        </span>
+                        <span class="text">Premium Storyteller Group</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 올라가는 숫자 -->
+            <div class="up-num flex-container">
+                <div class="top-box">
+                    <div class="box1 flex-container">
+                        <div class="rectangle">
+                            <span id="hours">0</span>
+                            <p>Hrs of Drama</p>
+                        </div>
+                        <div class="post">눈물의여왕</div>
+                        <div class="rectangle">
+                            <span id="creators">0</span>
+                            <p>Creators</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-box">
+                    <div class="box2 flex-container">
+                        <div class="post">정년이</div>
+                        <div class="rectangle">
+                            <span id="sales">0</span>
+                            <p>Sales Markets</p>
+                        </div>
+                        <div class="post">엄마친구아들</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 방영중 -->
+            <div class="on_air">
+                <h2 class="title no-drag">It's Currently On Air</h2>
+                <div class="on_air-drag flex-container">
+                    <div class="chasing-element">Drag</div>
+                    <div class="drag-box box1 flex-container">
+                        <div class="drag-img no-drag img1">사랑은 외나무다리에서</div>
+                        <strong class="no-drag">사랑은 외나무다리에서</strong>
+                        <p class="no-drag">tvN [토,일] 오후 09:20 방송</p>
+                    </div>
+                    <div class="drag-box no-drag box2 flex-container">
+                        <div class="drag-img img2">좋거나 나쁜 동재</div>
+                        <strong class="no-drag">좋거나 나쁜 동재</strong>
+                        <p class="no-drag">2024.10.10</p>
+                    </div>
+                    <div class="drag-box no-drag box3 flex-container">
+                        <div class="drag-img img3">아들이 죽었다</div>
+                        <strong class="no-drag">아들이 죽었다 (O'PENing 2024)</strong>
+                        <p class="no-drag">tvN 오후 08:30 방송</p>
+                    </div>
+                    <div class="drag-box no-drag box4  flex-container">
+                        <div class="drag-img img4">고물상 미란이</div>
+                        <strong class="no-drag">고물상 미란이 (O'PENing 2024)</strong>
+                        <p class="no-drag">tvN [월] 오후 08:50 방송</p>
+                    </div>
+                    <div class="drag-box no-drag box5 flex-container">
+                        <div class="drag-img img5">덕후의 딸</div>
+                        <strong class="no-drag">덕후의 딸(O'PENing 2024)</strong>
+                        <p class="no-drag">tvN [월] 오후 08:50 방송</p>
+                    </div>
+                </div>
+                <div class="btn-box flex-container">
+                    <a href="#" class="btn1" id="btn1">More Work <img src="./images/arrow_right_alt_black.svg"
+                            alt="화살표"></a>
+                    <a href="#" class="btn2" id="btn2">More Work <img src="./images/arrow_right_alt.svg" alt="화살표"></a>
+                </div>
+            </div>
+
+
+            <!-- 자회사 & 협력사 -->
+            <div class="subsidiary">
+                <div class="circle-wrapper">
+                    <div class="center-text">
+                        <h2 class="title">Subsidiary & Related companies</h2>
+                    </div>
+                    <div class="circle-top flex-container">
+                        <div class="circle circl1">화담</div>
+                        <div class="circle circl2">문화창고</div>
+                        <div class="circle circl3">메리카우</div>
+                    </div>
+                    <div class="circle-center flex-container">
+                        <div class="circle circl4">KPj</div>
+                        <div class="circle circl5">gtst</div>
+                    </div>
+                    <div class="circle-bottom flex-container">
+                        <div class="circle circl6">무비락</div>
+                        <div class="circle circl7">길픽처</div>
+                        <div class="circle circl8">넥스트씬</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 왜 선택해야 하는가? -->
+            <div class="choose">
+                <div class="choose-txt flex-container">
+                    <h2 class="title">Why Choose This?</h2>
+                    <p>CJ ENM의 자회사 스튜디오드래곤은 K-DRAMA를 리딩하는 대한민국 대표 드라마 스튜디오로<br>무궁무진한 이야기로 전세계를 매료시키는 프리미엄 스토리텔러 그룹입니다
+                    </p>
+                </div>
+                <div class="top-container flex-container">
+                    <div class="choose-box box1 active">
+                        <p>K-Drama</p>
+                    </div>
+                    <div class="choose-box box2">
+                        <p>Global</p>
+                    </div>
+                    <div class="choose-box box3">
+                        <p>Netflix</a>
+                    </div>
+                    <div class="choose-box box4">
+                        <p>Media</p>
+                    </div>
+                </div>
+                <div class="under-container flex-container">
+                    <!-- K-Drama -->
+                    <div id="K-Drama" class="under-box flex-container">
+                        <div class="step flex-container">
+                            <h2 class="title">01</h2>
+                            <p>&lt;사랑의 불시착&gt;, &lt;더 글로리&gt;, &lt;스위트홈&gt; 등 K&#8209;DRAMA가 전 세계 시청자에게 큰 인기를 얻고 있음</p>
+                        </div>
+                        <div class="step flex-container">
+                            <h2 class="title">02</h2>
+                            <p>로맨스, 스릴러, 판타지 등 폭넓은 장르로 글로벌 팬층을 확대</p>
+                        </div>
+                        <div class="step flex-container">
+                            <h2 class="title">03</h2>
+                            <p>A-list 작가, 감독, 프로듀서가 수준 높은 콘텐츠 제작에 참여</p>
+                        </div>
+                    </div>
+
+                    <!-- 글로벌 -->
+                    <div id="Global" class="under-box flex-container">
+                        <div class="step flex-container">
+                            <h2 class="title">01</h2>
+                            <p>미국 LA와 일본 도쿄에 지사를 설립하며 해외 시장 진출 가속화</p>
+                        </div>
+                        <div class="step flex-container">
+                            <h2 class="title">02</h2>
+                            <p>Skydance Media, Apple TV+ 등과 협력해 다양한 국제 콘텐츠 제작</p>
+                        </div>
+                        <div class="step flex-container">
+                            <h2 class="title">03</h2>
+                            <p>스튜디오드래곤의 작품이 200개 이상 국가로 배급되며 K-DRAMA를 세계적으로 확산</p>
+                        </div>
+                    </div>
+
+                    <!-- 넷플릭스 -->
+                    <div id="Netflix" class="under-box flex-container">
+                        <div class="step flex-container">
+                            <h2 class="title">01</h2>
+                            <p>&lt;스위트홈&gt;, &lt;더 글로리&gt; 등 작품이 Netflix 글로벌 TOP10에 다수 선정</p>
+                        </div>
+                        <div class="step flex-container">
+                            <h2 class="title">02</h2>
+                            <p>Netflix와 협력해 독점 오리지널 콘텐츠 제작 및 스트리밍 제공</p>
+                        </div>
+                        <div class="step flex-container">
+                            <h2 class="title">03</h2>
+                            <p> Netflix를 통한 K-DRAMA 접근성 증가로 전 세계 팬층 급속 확산</p>
+                        </div>
+                    </div>
+                    <!-- 미디어 -->
+                    <div id="Media" class="under-box flex-container">
+                        <div class="step flex-container">
+                            <h2 class="title">01</h2>
+                            <p>&lt;사랑의 불시착&gt;, &lt;빈센조&gt; 등 인기 드라마의 리메이크로 새로운 시장 개척</p>
+                        </div>
+                        <div class="step flex-container">
+                            <h2 class="title">02</h2>
+                            <p>Apple TV+, Skydance Media 등과 협력해 미디어 시장 확대</p>
+                        </div>
+                        <div class="step flex-container">
+                            <h2 class="title">03</h2>
+                            <p>방송, 스트리밍, 리메이크 판권 판매를 통한 다각적 수익 구조</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container2">
+            <div class="container-box2"></div>
+        </div>
+        <section class="content-box2" id="content-box2">
+            <!-- CJ그룹 계열사 -->
+            <div class="affiliates grid-container">
+                <div class="affiliates-left flex-container">
+                    <h2 class="title">Studio Dragon<br>CJ Group Affiliates</h2>
+                    <p>스튜디오드래곤은 CJ그룹의 계열사로, 글로벌 콘텐츠 제작을 선도하는 역할을 하고 있습니다<br>CJ의 지원을 통해 K-DRAMA의 품질과 범위를 확장하며, 전 세계 미디어
+                        시장에서의 영향력을 강화하고 있습니다<br>또한, CJ의 글로벌 네트워크를 활용하여 K-DRAMA의 국제적 입지를 확립하고 있습니다</p>
+                    <div class="btn-box flex-container">
+                        <a href="#" class="btn1" id="btn1">View Report<img src="./images/arrow_right_alt_black.svg"
+                                alt="화살표"></a>
+                        <a href="#" class="btn2" id="btn2">View Report<img src="./images/arrow_right_alt_black.svg"
+                                alt="화살표"></a>
+                    </div>
+                </div>
+                <div class="affiliates-right">
+                    <ul class="cj-wrapper flex-container">
+                        <li><img src="./images/enm.png" alt="enm"></li>
+                        <li><img src="./images/cgv.png" alt="cgv"></li>
+                        <li><img src="./images/대한통운.png" alt="대한통운"></li>
+                        <li><img src="./images/프레시웨이.png" alt="프레시웨이"></li>
+                        <li><img src="./images/올리브영.png" alt="올리브영"></li>
+                        <li><img src="./images/제일제당.png" alt="제일제당"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- 정년이 비디오 -->
+            <div class="news">
+                <div class="news-slide-box">
+                    <div class="news-slide-txt flex-container">
+                        <span>Drama</span>
+                        <span><svg width=" 40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg></span>
+                        <span>Jeongnyeon</span>
+                        <span><svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg></span>
+                        <span>The Star Is Born</span>
+                        <span><svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg></span>
+                        <span>The Real Star Is Pansori</span>
+                        <span><svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg></span>
+                        <span>Drama</span>
+                        <span><svg width=" 40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg></span>
+                        <span>Jeongnyeon</span>
+                        <span><svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg></span>
+                        <span>The Star Is Born</span>
+                        <span><svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg></span>
+                        <span>The Real Star Is Pansori</span>
+                    </div>
+                </div>
+                <div class="news-vedio">
+                    <iframe
+                        src="https://www.youtube.com/embed/ZSIQ2yGrA-I?autoplay=1&mute=1&loop=1&playlist=ZSIQ2yGrA-I&controls=0&cc_load_policy=0&hl=en&cc_lang_pref="
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="btn-box flex-container">
+                        <a href="#" class="btn1">More News<img src="./images/arrow_right_alt_black.svg" alt="화살표"></a>
+                        <a href="#" class="btn2">More News<img src="./images/arrow_right_alt_black.svg" alt="화살표"></a>
+                    </div>
+                </div>
+
+
+                <div class="news-under-txt grid-container">
+                    <ul class="flex-container">
+                        <li>Studio Dragon</li>
+                        <li>NEWS</li>
+                        <li>2024.03.07</li>
+                    </ul>
+                    <p>글로벌 OTT 콘텐츠 순위 서비스 플릭스패트롤에 따르면 '정년이'는 5일(화) 기준 디즈니+ 글로벌 TV쇼 부문 TOP10 6위에 올랐다<br>지난 31일 TOP10에 첫
+                        진입한
+                        이후 점점 순위가 상승하고 있는 것. 특히 한국뿐 아니라 대만, 싱가포르, 홍콩 등 세계 각지에서<br>디즈니+ TV쇼 부문 1위에 등극하며 인기몰이 중이다. 일본에서는
+                        4위에 오르며 TOP10 차트 순위권을 차지하고 있다</p>
+                </div>
+            </div>
+
+
+            <!-- CEO 말씀 -->
+            <div class="ceo">
+                <div class="story grid-container">
+                    <div class="story-text flex-container">
+                        <h3 class="sub-title">The CEO's words as he<br> publishes the second<br>sustainable story</h3>
+                    </div>
+                    <div class="story-deco flex-container">
+                        <img src="./images/story-deco.svg" alt="데코">
+                    </div>
+                    <div class="story-box">
+                        <div class="story-box-wrapper flex-container">
+                            <div class="story-box story-box1">이미지</div>
+                            <div class="story-box story-box2 flex-container">
+                                <strong>‘독창적인 Well-Made IP를<br>
+                                    창출하는 프리미엄 스토리텔러 그룹’</strong>
+                                <p>K-드라마의 글로벌 영향력 확대와 지속가능한 비즈니스 모델을 통해 사회적 책임을<br> 다하고 업계 리더로서 모범을 보이고자 두번째 지속가능보고서를
+                                    발간합니다</p>
+                                <div class="btn-box flex-container">
+                                    <a href="#" class="btn1" id="btn1">CEO MESSAGE<img
+                                            src="./images/arrow_right_alt_black.svg" alt="화살표"></a>
+                                    <a href="#" class="btn2" id="btn2">CEO MESSAGE<img
+                                            src="./images/arrow_right_alt.svg" alt="화살표"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container3">
+            <div class="container-box3"></div>
+        </div>
+
+        <section class="content-box3">
+            <!-- 수상기록 -->
+            <div class="achievements">
+                <h2 class="title no-drag">Achievements</h2>
+                <div class="achievements-wrapper no-drag flex-container">
+                    <div class="chasing-element2">Drag</div>
+                    <div class="achievements-box box1  no-drag">
+                        <img src="./images/수상1.png" alt="눈물의여왕">
+                        <p class="no-drag">&lt;눈물의 여왕&gt;<br>
+                            2024 서울드라마어워즈<br>
+                            K-드라마부문 작품상 및 OST상 수상
+                        </p>
+                    </div>
+                    <div class="achievements-box box2 no-drag">
+                        <img src="./images/수상2.png" alt="복숭아">
+                        <p class="no-drag">&lt;복숭아 누르지 마시오&gt;<br>
+                            2024 서울드라마어워즈<br>
+                            국제경쟁부문 단막극 작품상 수상</p>
+                    </div>
+                    <div class="achievements-box box3 no-drag">
+                        <img src="./images/수상3.png" alt="하이라키">
+                        <p class="no-drag">&lt;하이라키&gt;<br>
+                            Netflix TOP 10 비영어부문 1위</p>
+                    </div>
+                    <div class="achievements-box box4 no-drag">
+                        <img src="./images/수상4.png" alt="The Big Door Prize>">
+                        <p class="no-drag">미국 TV 시리즈 진출작<br>
+                            &lt;The Big Door Prize 시즌2 &gt;<br>
+                            애플TV+ 공개</p>
+                    </div>
+                    <div class="achievements-box box5 no-drag">
+                        <img src="./images/수상5.png" alt="내남편">
+                        <p class="no-drag">&lt;내 남편과 결혼해줘&gt;<br>
+                            Amazon Prime Video 글로벌 1위/p>
+                    </div>
+                    <div class="achievements-box box6 no-drag">
+                        <img src="./images/수상6.png" alt="일타강사">
+                        <p class="no-drag">&lt;일타 스캔들&gt;<br>
+                            양희승 작가 2023 대한민국 콘텐츠대상<br>
+                            방송영상산업발전유공 부문 대통령 표창</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container4">
+            <div class="container-box4"></div>
+        </div>
+
+        <section class="content-box4">
+            <div class="open grid-container">
+                <div class="open-textbox">
+                    <h2 class="title">We are recruiting 2025<br>
+                        O’pen Storytellers</h2>
+                    <ul class="open-list flex-container">
+                        <li>Drama 2025. 01. 02 - 15</li>
+                        <li><svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5" cy="5.5" r="5" fill="#FFB948" />
+                            </svg></li>
+                        <li>Film 2025. 02. 03 - 17</li>
+                        <li><svg width="40" height="11" viewBox="0 0 40 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="40" height="10" rx="5" fill="#FFB948" />
+                            </svg></li>
+                        <li>o-pen.co.kr</li>
+                    </ul>
+                    <p>오펜(O'PEN) 프로그램은 신인 창작자를 위해 멘토링, 특강, 현장 취재를 통해 창작 역량을 강화하며,<br>
+                        당선작은 스튜디오 드래곤에서 제작해 tvN과 TVING에서 공개됩니다</p>
+                    <div class="view-wrapper">
+                        <div class="view-more more1">
+                            <a href="#">View<br>More</a>
+                        </div>
+                        <div class="view-more more2">
+                            <a href="#">View<br>More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="open-img-box">
+                    <div class="big">
+                        <div class="big-c">원</div>
+                        <div class="big-b">풍선</div>
+                    </div>
+                    <div class="small">
+                        <div class="small-c">원</div>
+                        <div class="small-b">풍선</div>
+                    </div>
+                    <div class="back">
+                        <div class="back-bg">그냥원</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="container5">
+        <div class="container-box5"></div>
+    </div>
+    <footer>
+        <section class="footer-container grid-container">
+            <div class="footer-logo">
+                <h2 class="logo">로고</h2>
+            </div>
+            <div class="list-container flex-container">
+                <ul class="list-box box1 flex-container">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">IR</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+                <ul class="list-box box2 flex-container">
+                    <li><a href="#">Hotline</a></li>
+                    <li><a href="#">Recruitment</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="list-right flex-container">
+                <ul class="site flex-container">
+                    <li><strong>CEO</strong> | 정경익</li>
+                    <li><strong>Address</strong> | 서울특별시 마포구 매봉산로 75, 17층 스튜디오드래곤 주식회사</li>
+                    <li><strong>사업자 등록번호</strong> | 747-81-00388</li>
+                </ul>
+
+                <ul class="social flex-container">
+                    <li><a href="#"><img src="./images/instar.svg" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="./images/x.svg" alt="x"></a></li>
+                    <li><a href="#"><img src="./images/IN.svg" alt="in"></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="row">
+            <div class="row-container flex-container">
+                <h2 class="row-logo">로고</h2>
+                <a href="#">
+                    포트폴리오 보러가기<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_22_165" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="24" height="24">
+                            <rect width="24" height="24" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_22_165)">
+                            <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

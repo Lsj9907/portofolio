@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>projectplace</title>
+    <!-- favicon -->
+
+    <!-- og -->
+
+    <!-- resect -->
+    <link rel="stylesheet" href="../assets/styles/reset.min.css">
+    <!-- common -->
+    <link rel="stylesheet" href="../assets/styles/common.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./projectplace.css">
+    <!-- script -->
+    <script src="../assets/scripts/lottie.min.js"></script>
+</head>
+
+<body>
+    <!-- 메뉴 -->
+    <div class="menu-items">
+        <a href="" class="menu-nav">메뉴</a>
+        <ul class="menu-list grid-container">
+            <li><a href="../index.html"><img src="../images/menu-home.svg" alt="home"></a></li>
+            <li><a href="../about.html"><img src="../images/menu-user.svg" alt="user"></a></li>
+            <li><a href="./projectplace.html"><img src="../images/menu-folder.svg" alt="folder"></a></li>
+            <li><a href=""><img src="../images/menu-mail.svg" alt="e-mail"></a></li>
+        </ul>
+    </div>
+    <div class="box-wrapper grid-container">
+        <div class="contain1">
+            <div class="box box1">
+            </div>
+            <a href="./project2/project2.html">
+                <div class="box box2">
+                    <div class="textbox">
+                        <span class="project-title2">Individual Project</span><br>
+                        <span>Reactive Web</span>
+                        <span class="project-date">2024. 10</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="contain2">
+            <a href="./project1/project1.html">
+                <div class="box box2">
+                    <div class="textbox">
+                        <span class="project-title">Team Project</span><br>
+                        <span>App Redesign</span>
+                        <span class="project-date">2024. 09</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="contain3">
+            <div class="box box1">
+            </div>
+            <a href="./project3/project3.html">
+                <div class="box box2">
+                    <div class="textbox">
+                        <span class="project-title2">Individual Project</span><br>
+                        <span>GSAP & Web Public</span>
+                        <span class="project-date">2024. 12</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="prodog" class="prodog"></div>
+
+    <script>
+        const prodog = lottie.loadAnimation({
+            container: document.getElementById('prodog'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '../assets/lotties/프로젝트강아지.json'
+        });
+    </script>
+</body>
+
+</html>

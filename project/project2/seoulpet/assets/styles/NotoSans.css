@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* Good Sans.css */
+
+@font-face {
+  font-family:'NotoSans';
+  src: local('NotoSans Thin'), 
+    url(../fonts/notosans/AnyConv.com__NotoSans-Thin.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100;
+}
+
+@font-face {
+    font-family:'NotoSans';
+    src: local('NotoSans Light'), 
+      url(../fonts/notosans/AnyConv.com__NotoSans-Light.woff2) format('woff2');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+  }
+@font-face {
+  font-family:'NotoSans';
+  src: local('NotoSans Regular'), 
+    url(../fonts/notosans/AnyConv.com__NotoSans-Regular.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family:'NotoSans';
+  src: local('NotoSans Medium'), 
+    url(../fonts/notosans/AnyConv.com__NotoSans-Medium.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
+  font-family:'NotoSans';
+  src: local('NotoSans Bold'), 
+    url(../fonts/notosans/AnyConv.com__NotoSans-Bold.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}

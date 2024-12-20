@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+
+body {
+    height: 100vh;
+    position: relative;
+}
+
+.backgound-title {
+    font-family: var(--font-main-title);
+    font-size: 11.5vw;
+    color: var(--color-peach-light);
+    text-align: center;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    line-height: 1;
+    height: fit-content;
+    box-sizing: border-box;
+    padding-top: 14vh;
+}
+
+/**** 위쪽 그리드 영역****/
+.top-wrapper {
+    width: 100%;
+    height: 40%;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    top: 13%;
+}
+
+/**** 소개 액자 ****/
+.aboutme-line {
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+}
+.about-container {
+    width: 15vw;
+    position: absolute;
+    right: 0;
+    top: 2vw;
+}
+.aboutme-line .post-iems {
+    gap: var(--menu-list-gap);
+    position: absolute;
+    bottom: 1.5vw;
+    right: 6vw;
+}
+
+
+/**** 소셜 ****/
+.favorite-canvas {
+    grid-template-rows: 1fr 1fr;
+    grid-column: 3 /4;
+    position: relative;
+}
+
+.favorite-canvas .sociaol-wrapper {
+    grid-row: 1 / 2;
+    position: absolute;
+    bottom: -1vw;
+    left: 8vw;
+}
+
+.favorite-canvas .sociaol-wrapper .social-links {
+    grid-template-columns: repeat(3, 50px);
+    gap: var(--menu-list-gap);
+    margin-left: var(--menu-list-gap);
+}
+
+.poster-container {
+    position: absolute;
+    bottom: -2vw; left: 9vw;
+    width: 5vw;
+}
+
+.poster-container img {
+    cursor: pointer; 
+}
+
+
+/**** 아래쪽 영역 ****/
+
+.under-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 28%;
+    position: relative;
+}
+
+.under-wrapper:after {
+    z-index: -999;
+    content: '';
+    width: 90%;
+    height: 0.3vw;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+/**** 책상 영역 ****/
+.desk-canvas {
+    grid-column: 1 / 2;
+    position: absolute;
+    bottom: 0;
+    left: 11vw;
+}
+
+.desk-canvas .computer {
+    position: relative;
+}
+.light-img {
+    position: absolute;
+    width: inherit;
+    bottom: -0.15vw; left: 1vw;
+    cursor: pointer;
+}
+.light-container {
+    position: absolute;
+    bottom: -0.5vw; left: 1.25vw;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.desk-canvas .computer .computer-leg {
+    width: 4vw;
+    position: absolute;
+    bottom: -0.5vw;
+    right: 7vw;
+    z-index: -99;
+}
+
+.desk-canvas .computer .computer-set a {
+    z-index: 99999;
+    width: 18vw;
+    display: flex;
+    position: absolute;
+    bottom: 0.9vw; right: -0.2vw;
+    transition: 0.3s;
+}
+.desk-canvas .computer .computer-set a:hover {
+    bottom: 1.5vw;
+}
+
+.desk {
+    width: 27vw;
+    z-index: 999999;
+}
+
+
+/* 캐릭터 */
+
+.dog {
+    position: relative;
+    grid-column: 2 / 3;
+}
+.eye-container {
+    z-index: 9999;
+    position: absolute;
+    left: 13.5vw; top:-3vw;
+}
+.eye {
+    width: 1.4rem;
+    height: 1.9rem;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.pupil {
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s;
+}
+.mydog {
+    position: absolute;
+    bottom: -0.5vw;
+    left: 0; right: 0; 
+    margin: 0 auto;
+    width: 25vw;
+    z-index: 9;
+}
+.house-canvas {
+    grid-column: 3 / 4;
+    position: relative;
+}
+.house-canvas .flower {
+    position: absolute;
+    bottom: -7px;
+    left: -2vw;
+}
+
+.house-canvas .dog-house {
+    position: absolute;
+    bottom: 0;
+    right: 14vw;
+    cursor: pointer;
+}

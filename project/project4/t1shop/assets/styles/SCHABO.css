@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* Object.css */
+
+@font-face {
+    font-family: 'SCHABO';
+    src: local('SCHABO-Condensed'), 
+      url(../fonts/SCHABO-Condensed.woff2) format('woff2');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+  }

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>SeoulPet</title>
+
+    <!-- og -->
+    <meta property="og:title" content="SEOULPET">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="지금 이 순간 우리가 돌보고, 우리에게 위로를 주며 가족이 되어준 반려동물들에게... ">
+    <meta property="og:image" content="https://lsj9907.github.io/seoulpet/images/%EC%BD%9C%EB%9D%BC%EB%B3%B4.svg">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <!-- reset -->
+    <link rel="stylesheet" href="./assets/styles/reset.min.css">
+
+    <!-- commons -->
+    <link rel="stylesheet" href="./assets/styles/common.css">
+
+    <!-- 내가 만든 css -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- jquery-3.7.1.min.js -->
+    <script src="./assets/scripts/jquery-3.7.1.min.js"></script>
+    <!-- swiper -->
+    <script src="./assets/scripts/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <!-- 해더 영역 -->
+    <header>
+        <!-- TOP 신상품 안내 -->
+        <div class="top-banner">
+            <div class="banner-txt">
+                <p><a href="#">신상품이 출시 되었습니다! ⭐ 새로운 스타일, 재고가 떨어지기 전에 구매해보세요!</a></p>
+            </div>
+            <ul class="global-banner">
+                <li><a href="#">book mark</a></li>
+                <li><a href="#">sign in</a></li>
+            </ul>
+        </div>
+
+        <!-- 고정 header -->
+        <div class="header-container flex-container">
+            <!-- 모바일 메뉴 -->
+            <div class="mobile-menu">
+                <div class="mobile-btn">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </div>
+                <div class="mobile-menu-backdrop"></div>
+                <nav class="mobile-menu-wrapper">
+                    <ul class="mobile-menu-container flex-container">
+                        <li><a href="#">shop<img src="./images/꺽쇠.svg" alt="꺽쇠"></a></li>
+                        <li><a href="#">community<img src="./images/꺽쇠.svg" alt="꺽쇠"></a></li>
+                        <li><a href="#">about<img src="./images/꺽쇠.svg" alt="꺽쇠"></a></li>
+                        <li><a href="#">my page<img src="./images/꺽쇠.svg" alt="꺽쇠"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- PC 버전 메뉴 -->
+            <div class="global-menu">
+                <nav class="global-menu-container">
+                    <ul class="global-menu-wrapper flex-container">
+                        <li><a href="#">shop
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#222">
+                                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                                </svg>
+                            </a>
+                            <ul class="mini-menu">
+                                <li><a href="#">new-in</a></li>
+                                <li><a href="#">wear</a></li>
+                                <li><a href="#">walk</a></li>
+                                <li><a href="#">acc</a></li>
+                                <li><a href="#">life</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">community</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="logo-wrapper">
+                <a href="#">로고</a>
+            </div>
+
+            <div class="header-right">
+                <ul class="header-right-item flex-container">
+                    <li><a href="#"><img src="./images/서치.svg" alt="서치"></a></li>
+                    <li><a href="#"><img src="./images/쇼핑백.svg" alt="쇼핑백"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 콘텐츠 영역 -->
+    <!-- pet life 메인 화면 -->
+    <section class="main-content grid-container">
+        <!-- 이미지 박스 -->
+        <div class="main-img-wrapper">
+            <img src="./images/main.jpg" alt="메인이미지">
+        </div>
+
+        <!-- pet life 텍스트 상자 -->
+        <div class="main-txt-wrapper">
+            <div class="main-txt-box">
+                <h1 class="title">pet life</h1>
+                <p class="sub-title">Give the gift of a better life to your dog, who comforts us and becomes family.</p>
+                <div class="btn-box">
+                    <a href="#">shop now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 스와이퍼 -->
+        <div class="slide-wrapper">
+            <div class="slide-box flex-container">
+                <div class="slide-item">
+                    <a href="#"><img src="./images/Design.svg" alt="Design"></a>
+                </div>
+                <div class="slide-item">
+                    <a href="#"><img src="./images/Practical.svg" alt="Practical"></a>
+                </div>
+                <div class="slide-item">
+                    <a href="#"><img src="./images/Reasonable.svg" alt="Reasonable"></a>
+                </div>
+                <div class="slide-item">
+                    <a href="#"><img src="./images/Companion.svg" alt="Companion"></a>
+                </div>
+                <div class="slide-item">
+                    <a href="#"><img src="./images/Health.svg" alt="Health"></a>
+                </div>
+                <div class="slide-item">
+                    <a href="#"><img src="./images/ABetterLife.svg" alt="A Better Life"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="better-living">
+        <h2 class="title">better lining for our pets</h2>
+        <p>지금 이 순간 우리가 돌보고, 우리에게 위로를 주며 가족이 되어준 반려동물들에게 미용 목적이 아닌 실용적인 디자인과 더 나은 삶을 선사하고자 합니다</p>
+    </section>
+
+    <!-- 신상품 -->
+    <section class="new-in">
+        <div class="new-txt-box">
+            <h2 class="title">new-in</h2>
+            <div class="tab-header flex-container">
+                <p>selling fast</p>
+            </div>
+        </div>
+        <div class="new-swiper">
+            <div class="new-swiper-wrapper flex-container">
+                <div class="new-swiper-slide">
+                    <a href="#">
+                        <img src="./images/swiper1.jpg" alt="swiper1">
+                    </a>
+                    <a href="#">
+                        <p>COTTON APRON [ORANGE]</p>
+                    </a>
+                    <strong>34,000</strong>
+                </div>
+                <div class="new-swiper-slide">
+                    <a href="#"><img src="./images/swiper2.jpg" alt="swiper2"></a>
+                    <a href="#">
+                        <p>BASIC ALL-IN-ONE [MUSTARD]</p>
+                    </a>
+                    <strong>34,000</strong>
+                </div>
+                <div class="new-swiper-slide">
+                    <a href="#"><img src="./images/swiper3.jpg" alt="swiper3"></a>
+                    <a href="#">
+                        <p>CHECK LINEN HOMEWEAR [PINK/GREEN]</p>
+                    </a>
+                    <strong>32,400</strong>
+                </div>
+                <div class="new-swiper-slide">
+                    <a href="#"><img src="./images/swiper4.jpg" alt="swiper4"></a>
+                    <a href="#">
+                        <p>COMFORT RIBBED WEAR [BLACK/MINT]</p>
+                    </a>
+                    <strong>32,000</strong>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- 3단 블럭 박스 -->
+    <section class="block-box flex-container">
+        <div class="block-item">
+            <a href="#">
+                <div class="block-img">
+                    <img src="./images/블럭이미지1.jpg" alt="이미지1">
+                </div>
+            </a>
+            <div class="block-txt">
+                <h3>Add Skychi to make it more visible at night</h3>
+                <div class="block-btn flex-container">
+                    <a href="#">
+                        <p>shop accessories</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#22222">
+                            <path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="block-item">
+            <a href="#">
+                <div class="block-img">
+                    <img src="./images/블럭이미지2.jpg" alt="이미지2">
+                </div>
+
+            </a>
+            <div class="block-txt">
+                <h3>This is a knit that can be worn comfortably anywherse</h3>
+                <div class="block-btn flex-container">
+                    <a href="#">
+                        <p>shop wear</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#22222">
+                            <path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="block-item">
+            <a href="#">
+                <div class="block-img">
+                    <img src="./images/블럭이미지3.jpg" alt="이미지3">
+                </div>
+            </a>
+            <div class="block-txt">
+                <h3>Cute colors and casual design for easy daily wear</h3>
+                <div class="block-btn flex-container">
+                    <a href="#">
+                        <p>shop walk</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#22222">
+                            <path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 리뷰박스 -->
+    <section class="review">
+        <div class="review-container flex-container">
+            <div class="review-wrapper grid-container">
+                <div class="review-img-wrapper">
+                    <div class="review-img-container">
+                        <img src="./images/리뷰이미지.jpg" alt="리뷰이미지">
+                    </div>
+                </div>
+                <div class="review-text-wrapper">
+                    <div class="review-txt-box">
+                        <img class="mobile" src="./images/따옴표.svg" alt="따옴표">
+                        <h1 class="title">Review select from seoul pet</h1>
+                        <svg class="pc" width="38" height="29" viewBox="0 0 38 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_285)">
+                                <path
+                                    d="M11.842 0.004L2.95999 13.578C0.986657 16.5007 -0.00034298 18.9047 -0.00100965 20.79C-0.0370539 22.8667 0.74861 24.8737 2.18499 26.374C2.87061 27.128 3.70982 27.7264 4.64613 28.1288C5.58243 28.5312 6.59409 28.7284 7.61299 28.707C8.59709 28.7232 9.57402 28.537 10.4832 28.1599C11.3923 27.7828 12.2142 27.223 12.898 26.515C13.6138 25.8044 14.1768 24.9551 14.5527 24.0191C14.9286 23.0832 15.1094 22.0803 15.084 21.072C15.1 19.431 14.6063 17.8255 13.671 16.477C12.7498 15.1262 11.417 14.109 9.87099 13.577L17.624 0.004H11.84H11.842ZM30.054 13.573L37.807 0H32.029L23.147 13.573C21.1737 16.4957 20.1867 18.8997 20.186 20.785C20.1497 22.8616 20.935 24.8685 22.371 26.369C23.0581 27.0938 23.8834 27.6737 24.7983 28.0742C25.7132 28.4747 26.6991 28.6879 27.6977 28.701C28.6964 28.7141 29.6875 28.527 30.6126 28.1507C31.5378 27.7744 32.3781 27.2165 33.084 26.51C33.7999 25.7995 34.3632 24.9502 34.7393 24.0142C35.1153 23.0783 35.2963 22.0754 35.271 21.067C35.2876 19.4262 34.7946 17.8207 33.86 16.472C32.9364 15.1197 31.6003 14.1025 30.051 13.572L30.054 13.573Z"
+                                    fill="#222222" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_285">
+                                    <rect width="37.808" height="28.707" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+
+                        <!-- 리뷰 슬라이드 -->
+                        <div class="review-swiper">
+                            <div class="review-swiper-wrapper">
+                                <div class="review-swiper-container">
+                                    <div id="box1" class="review-swiper-slide">
+                                        <p>편하게 입고 벗기기 할수 있어서 좋아요!<br>얼굴까지 씌어놓으면 애기는 싫어하지만 너무 귀엽고... 비오는 날에 잘 입고 다니고
+                                            있어요ㅎㅎ
+                                        </p>
+                                        <span>aldksgk****</span>
+                                    </div>
+                                    <div id="box2" class="review-swiper-slide">
+                                        <p>후드티야 워낙 자주입었었는데, 강아지가 옷을 밚이 불편해하지 않고, 귀여워서 다른색도 구매할까싶네요</p>
+                                        <span>wlqdmfh****</span>
+                                    </div>
+                                    <div id="box3" class="review-swiper-slide">
+                                        <p>기모는 아닌데 두께감이 있고, 모자가 탄탄해서 좋았어요! 그리고 일단 너무 귀엽습니다 ㅠㅠ 네이비로 하나 더 주문할까싶네요~</p>
+                                        <span>rlahdp****</span>
+                                    </div>
+                                    <div id="box4" class="review-swiper-slide">
+                                        <p>10키로 웰시에요 사이즈 딱 맞구요 너무 이뻐요! 다음에 또 구매할까 싶어요</p>
+                                        <span>zhrlzhrl****</span>
+                                    </div>
+                                </div>
+                                <ul class="slide-button flex-container">
+                                    <li><a href="#box1">btn1</a></li>
+                                    <li><a href="#box2">btn2</a></li>
+                                    <li><a href="#box3">btn3</a></li>
+                                    <li><a href="#box4">btn4</a></li>
+                                </ul>
+                                <div class="global-button flex-container">
+                                    <div class="left-button">
+                                        <img src="./images/arrow_circle_left_24dp_22222_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt="왼쪽">
+                                    </div>
+                                    <div class="right-button">
+                                        <img src="./images/arrow_circle_right_24dp_22222_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt="오른쪽">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 피버 퍼퓸 -->
+    <section class="fiber grid-container">
+        <div class="fiber-txt-wrapper">
+            <div class="fiber-txt-container flex-container">
+                <h2 class="title">fiber perfume<br>wake blue<br>s:chim</h2>
+                <div class="fiber-global">
+                    <div class="under-line"></div>
+                    <p>찰나,<br>하지만 오래도록 소유하고 싶은 향을 선보이고 있는 자체 조향 브랜드 S:chim과의 프로젝트 제품입니다 누구나 가슴 속에 품고 있는 동심을 회상하는 상상을 하며
+                        제작된
+                        제품이며 사람과 함께 공용 사용 가능한 제품입니다</p>
+                </div>
+                <div class="btn-box">
+                    <a href="#">shop life</a>
+                </div>
+            </div>
+        </div>
+        <div class="img-wrapper">
+            <div class="fiber-mobile-img-wrapper">
+                <img src="./images/상세2_shop1_184947.jpg" alt="피버퍼퓸">
+            </div>
+            <div class="fiber-global-img-wrapper">
+            </div>
+            <div class="btn-box">
+                <a href="#">shop life</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ceo talk-->
+    <section class="ceo-talk grid-container">
+        <div class="ceo-talk-wrapper flex-container">
+            <div class="talk-img-box">
+                <p>이미지</p>
+            </div>
+            <div class="talk-wrapper">
+                <div class="talk-txt-box flex-container">
+                    <div class="talk-txt-container">
+                        <p>전 세계적으로 반려동물을 키우는 인구는 늘어나고 있지만 <strong>주인의 품에서 자연사 하는 동물은 10% 미만이라고 합니다.</strong> 서울펫은 상처받은
+                            90%
+                            이상의
+                            동물들에게 실질적인 도움을 전달될 수 있는 <strong>’착한거래’</strong>를 지향합니다</p>
+                        <h3 class="strong">* 서울펫이 생각하는 착한거래란?</h3>
+                        <p><strong>여러분의 구매는 곧 후원으로 연결됩니다</strong> 직접 간접적인 도움이 어려우신 분들의 마음을 모아서 잠깐의 ‘봉사’가 아닌 지속가능한 ‘후원’으로
+                            작지만
+                            큰
+                            변화를 바라며 실질적인 도움을 줄 수 있는 방안을 강구해 나갈 것 입니다</p>
+                        <div class="under-line"></div>
+                        <span>SEOULPET<br>OWNER</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2개 블럭 -->
+    <section class="comfort">
+        <div class="comfort-top-wrapper">
+            <p>self-design</p>
+            <h2 class="title">give your pet some comfort</h2>
+        </div>
+        <div class="comfort-img-wrapper flex-container">
+            <div class="comfort-box box1">
+                <a href="#">
+                    <img src="./images/comfort1.jpg" alt="이미지1">
+                </a>
+                <div class="comfort-txt-box">
+                    <p>gentle on your pet’s skin</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+            <div class="comfort-box box2">
+                <a href="#">
+                    <img src="./images/comfort2.jpg" alt="이미지2">
+                </a>
+                <div class="comfort-txt-box">
+                    <p>mild shower supplies</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 인스타 -->
+    <section class="social">
+        <h3>Let’s be firends: Follow us</h3>
+        <a href="#">@seoulpet_official</a>
+    </section>
+
+    <!-- 콜라보 -->
+    <section class="collabor">
+        <div class="collabor-wrapper grid-container">
+            <div class="collabor-txt">
+                <h2 class="title">Let’s Stay In Touch</h2>
+                <p>제품, 콜라보레이션, 귀여운 강아지 등 여러분이 알고<br>싶어할 만한 내용에 대한 이메일 업데이트를 받아보세요.</p>
+                <div class="email-wrapper">
+                    <input type="text" name="email" id="eMail" placeholder="Enter your email"><button>버튼</button>
+                </div>
+            </div>
+            <div class="collabor-img">
+                <img src="./images/콜라보.svg" alt="콜라보">
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <nav class="footer-mobile">
+            <ul class="footer-mobile-btn">
+                <li><a href="#" class="flex-container">customer center
+                        <img src="./images/꺽쇠.svg" alt="꺽쇠"></a></li>
+                <li><a href="#" class="flex-container">supplies
+                        <img src="./images/꺽쇠.svg" alt="꺽쇠"></a></li>
+                <li><a href="#" class="flex-container">about
+                        <img src="./images/꺽쇠.svg" alt="꺽쇠"></a></li>
+            </ul>
+            <div class="cs-num">
+                <h3>cs center</h3>
+                <span>010-3434-5609</span>
+                <p>M-F 11am-5pm</p>
+                <p>Q&A 게시판을 이용하시면 더욱 빠른 처리 가능합니다</p>
+            </div>
+            <div class="footer-logo">
+                <a href="#">로고</a>
+            </div>
+        </nav>
+
+        <div class="footer-global flex-container">
+            <div class="global-box">
+                <h3 class="title">customer center</h3>
+                <ul class="cs-center">
+                    <li>Q&A 게시판을 이용하시면 더욱 빠른 처리 가능합니다</li>
+                    <li>M-F 11am-5pm</li>
+                    <li class="num">
+                        <img src="./images/고객센터.svg" alt="고객센터">
+                        010-3434-5609
+                    </li>
+                    <li class="bank">
+                        <img src="./images/은행.svg" alt="은행">
+                        <p>예금주: 서울펫(유보선)<br>
+                            <strong>IBK 056-090486-04-019</strong>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="global-box flex-container">
+                <h3 class="title">customer care</h3>
+                <ul>
+                    <li>guide</li>
+                    <li>privacy policy</li>
+                    <li>agrement</li>
+                </ul>
+            </div>
+            <div class="global-box flex-container">
+                <h3 class="title">supplies</h3>
+                <ul>
+                    <li>new-in</li>
+                    <li>wear</li>
+                    <li>walk</li>
+                    <li>acc</li>
+                    <li>life</li>
+                </ul>
+            </div>
+            <div class="global-box">
+                <h3 class="title">company</h3>
+                <ul>
+                    <li>
+                        <strong>owner</strong>
+                        유보선
+                    </li>
+                    <li>
+                        <strong>address</strong>
+                        04416 서울특별시 용산구 보광동 33-1 1f
+                    </li>
+                    <li>
+                        <strong>business licence</strong>
+                        143 - 14 - 0051
+                    </li>
+                    <li>
+                        <strong>mail-order licence</strong>
+                        2018 - 서울광진 - 0029
+                    </li>
+                    <li>
+                        <strong>cpo seoul pet</strong>
+                        seulpet.official@gamil.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="#">COPYRIGHT © 서울펫(SEOUL PET) ALL RIGHTS RESERVED. design by Artygen</a>
+        </div>
+    </footer>
+</body>
+
+</html>
