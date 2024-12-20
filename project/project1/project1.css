@@ -6,13 +6,13 @@ body{
 
 .title-name {
     font-size: var(--project-title-md);
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: var(--about-list-gap);
 }
 
 .sub-title-name {
     font-size: var(--project-title-sm);
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: var(--about-list-gap);
     color: var(--color-peach-dark);
 }
@@ -52,7 +52,7 @@ body{
 
 .page1 .title-wrapper h1 {
     font-size: var(--project-title-lg);
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .page1 .title-wrapper h2 {
@@ -176,7 +176,7 @@ body{
 
 .page3 .backgound-box span {
     display: block;
-    font-weight: bold;
+    font-weight: 600;
     font-size: var(--project-title-xsm);
     color: var(--color-peach-dark);
     margin-bottom: var(--about-list-gap);
@@ -313,7 +313,7 @@ body{
 
 .page .asistobe-box span {
     color: var(--color-peach-dark);
-    font-weight: bold;
+    font-weight: 600;
     font-size: var(--project-title-sm);
     display: block;
     text-align: right;
@@ -427,7 +427,7 @@ body{
     border: 2px solid var(--color-white);
     padding: 5px 10px;
     border-radius: 40px;
-    font-weight: bold;
+    font-weight: 600;
     float: right;
     transition: 0.4s;
 }
@@ -438,7 +438,7 @@ body{
 
 .page6-1 .text-wrapper span {
     display: block;
-    font-weight: bold;
+    font-weight: 600;
     font-size: var(--project-title-xsm);
     margin-bottom: var(--about-list-gap);
 }
@@ -497,7 +497,7 @@ body{
 
 .page7-1 .text-wrapper span {
     display: block;
-    font-weight: bold;
+    font-weight: 600;
     font-size: var(--project-title-xsm);
     margin-bottom: var(--about-list-gap);
 }
@@ -544,7 +544,7 @@ body{
 
 .page8-1 .text-wrapper span {
     display: block;
-    font-weight: bold;
+    font-weight: 600;
     font-size: var(--project-title-xsm);
     margin-bottom: var(--about-list-gap);
 }
@@ -659,7 +659,7 @@ body{
     padding: 20px;
     text-align: center;
     border-radius: 100px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 2;
     transition: 0.3s;
 }
@@ -680,7 +680,7 @@ body{
 
 .tanks {
     background-color: var(--color-peach-dark);
-    font-weight: bold;
+    font-weight: 600;
     height: 20vh;
     align-items: center;
     justify-content: center;

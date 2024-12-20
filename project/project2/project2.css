@@ -20,13 +20,13 @@ section {
 
 .title-name {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 60px;
 }
 
 .num {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--color-peach-dark);
     position: relative;
     top: -10px;
@@ -35,7 +35,7 @@ section {
 
 .sub-title {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
@@ -57,7 +57,7 @@ section {
 
 .main .txt-wrapper h2 {
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 1.2;
 }
 
@@ -153,7 +153,7 @@ section {
 
 .problem .ps-title {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 600;
     border-bottom: 1px solid var(--color-smooth-black);
     margin-bottom: 15px;
 }
@@ -204,7 +204,7 @@ section {
 }
 footer {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 600;
     padding: 60px 0;
     background-color: var(--color-peach-dark);
     color: var(--color-white);
