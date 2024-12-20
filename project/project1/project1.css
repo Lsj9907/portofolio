@@ -161,6 +161,7 @@
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr 1fr;
     position: relative;
+    gap: 120px;
     padding: 120px 0;
 }
 
@@ -355,6 +356,7 @@
     padding: 130px 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 90%;
+    gap: 80px;
 }
 
 .page5 p {
