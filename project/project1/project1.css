@@ -20,29 +20,25 @@ body{
 .page {
     width: 1400px;
     margin: 0 auto;
-    height: 120vh;
+    padding: 100px 0;
 }
 
 
 /* 첫번째 페이지 */
 .page-box {
+    position: relative;
+    height: 100vh;
     background-image: linear-gradient(to top, #FFDDE6 0%, #EF99B1 120%);
-
 }
 
 .page1 {
-    height: 100vh;
-    position: relative;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr 1fr;
+    height: inherit;
+    grid-template-columns: 50% 50%;
 }
-
-.page1 .title-wrapper {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    position: absolute;
-    bottom: 2rem;
-    line-height: 1.2;
+.page1 .txt-box {
+    flex-direction: column;
+    place-content: end;
+    gap: 100px;
 }
 
 .page1 .title-wrapper span {
@@ -61,32 +57,26 @@ body{
 }
 
 .page1 .sub-title-wrapper {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    position: absolute;
-    bottom: 6rem;
     line-height: 2;
 }
 
 .page1 .mockup-box {
+    width: 100%;
     grid-column: 2 / 3;
-    grid-row: span 2;
-    position: relative;
+    place-content: end;
 }
 
 .page1 .mockup-box .mockup1 {
-    position: absolute;
-    bottom: 5rem;
-    left: 50px;
-    width: 320px;
+    position: relative;
+    width: 35%;
     z-index: 999;
+    place-content: end;
 }
 
 .page1 .mockup-box .mockup2 {
-    position: absolute;
-    width: 450px;
-    bottom: 5rem;
-    right: 0;
+    display: flex;
+    position: relative;
+    left: -6.5vw;
 }
 
 /* 두번째 페이지 */
@@ -154,7 +144,6 @@ body{
     background-color: var(--color-white);
     margin: 0;
     padding: 0;
-    height: 120vh;
 }
 
 .box-3 .title-name {
@@ -360,7 +349,6 @@ body{
     padding: 130px 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 90%;
-    gap: 80px;
 }
 
 .page5 p {
@@ -387,6 +375,7 @@ body{
 .page5 .over-right {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    margin-left: 50px;
 }
 
 .page5 .overview-box {
@@ -395,12 +384,10 @@ body{
 
 /* 여섯번째 페이지 */
 .page6 {
-    height: 120vh;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
 }
 
 .page6-1 {
-    height: 120vh;
     grid-column: 1 / 2;
     background-color: var(--color-peach-dark);
     color: var(--color-white);
@@ -413,7 +400,6 @@ body{
 
 .page6-1 .text-wrapper {
     width: 410px;
-    height: 90vh;
     margin: 0 auto;
     grid-template-rows: 1fr 1fr;
 }
@@ -445,52 +431,45 @@ body{
 
 .page6-1 .text-wrapper .title-box {
     place-self: end;
+    padding-bottom: 120px;
 }
 
 .page6-2 {
-    width: 1000px;
     position: relative;
-    padding: 120px 0;
     grid-column: 2 / 3;
 }
-
-.page6-2 img {
-    width: 600px;
-}
-
 .page6-2 .pro-1 {
     position: absolute;
-    left: 80px;
+    left: 5%;
+    top: 5%;;
 }
 
 .page6-2 .pro-2 {
     position: absolute;
-    bottom:50px;
-    right: 200px;
+    bottom: 0;
+    right: 0;
 }
+
 
 /* 일곱번째 페이지 */
 .page7 {
-    height: 120vh;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:40% 60%;
 }
 
 .page7-1 {
-    padding: 120px;
-    height: 120vh;
     grid-column: 1 / 2;
+    height: 100vh;
+    padding: 150px 0 0 0;
 }
 
 .page7-1 .text-wrapper {
-    width: 400px;
-    height: 80vh;
+    width: 410px;
+    height: 100%;
     margin: 0 auto;
 }
 
 .page7-2 {
-    width: 1000px;
     position: relative;
-    padding: 90px 0;
     grid-column: 2 / 3;
     background-color: var(--color-peach-dark);
 }
@@ -502,29 +481,23 @@ body{
     margin-bottom: var(--about-list-gap);
 }
 
-.page7-2 img {
-    width: 600px;
-}
-
 .page7-2 .pro-1 {
     position: absolute;
-    left: 80px;
+    top: 5%;;
 }
 
 .page7-2 .pro-2 {
     position: absolute;
-    bottom: 50px;
-    right: 200px;
+    bottom: 0;
+    right: 0;
 }
 
 /* 여덟번째 페이지 */
 .page8 {
-    height: 120vh;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
 }
 
 .page8-1 {
-    height: 120vh;
     grid-column: 1 / 2;
     background-color: var(--color-peach-dark);
     color: var(--color-white);
@@ -550,41 +523,34 @@ body{
 }
 
 .page8-2 {
-    width: 1000px;
     position: relative;
-    padding: 120px 0;
     grid-column: 2 / 3;
 }
 
-.page8-2 img {
-    width: 600px;
-}
 
 .page8-2 .pro-1 {
     position: absolute;
-    left: 80px;
+    top: 5%;;
 }
 
 .page8-2 .pro-2 {
     position: absolute;
-    bottom: 50px;
-    right: 200px;
+    bottom: 0;
+    right: 0;
 }
 
 /* 아홉번째 페이지 */
-.box-9 {
-    height: 130vh;
-}
 .page9 {
     padding: 120px 0;
 }
 
 .page9 .result-box {
+    overflow: hidden;
     margin-bottom: var(--project-title-lg);
 }
 
 .page9 .result-box .result-item {
-    width: 1500px;
+    width: 1450px;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -681,7 +647,7 @@ body{
 .tanks {
     background-color: var(--color-peach-dark);
     font-weight: 600;
-    height: 20vh;
+    height: 150px;
     align-items: center;
     justify-content: center;
     font-size: var(--project-title-sm);

@@ -47,90 +47,95 @@
             <li><a href="mailto:tnwlsdl972@naver.com"><img src="./images/menu-mail.svg" alt="e-mail"></a></li>
         </ul>
     </div>
+    <main class="grid-container">
+        <!-- 위쪽 영역 -->
+        <div class="top-wrapper grid-container">
+            <!-- 소개 액자 -->
+            <div class="aboutme-line flex-container">
+                <a href="./about.html">
+                    <div id="about" class="about-container"></div>
+                </a>
 
-    <!-- 위쪽 영역 -->
-    <div class="top-wrapper grid-container">
-        <!-- 소개 액자 -->
-        <div class="aboutme-line grid-container">
-            <a href="./about.html">
-                <div id="about" class="about-container"></div>
-            </a>
-            <!-- 포스트잇 -->
-            <ul class="post-iems flex-container">
-                <li><img src="./images/pos-js.svg" alt="자바"></li>
-                <li><img src="./images/ps-css.svg" alt="css"></li>
-                <li><img src="./images/ps-re.svg" alt="리액트"></li>
-            </ul>
-        </div>
-        <!-- 소셜, 포스터 영역 -->
-        <div class="favorite-canvas grid-container">
-            <!-- 소셜 -->
-            <div class="sociaol-wrapper">
-                <ul class="social-links grid-container">
-                    <li><a href="mailto:tnwlsdl972@naver.com"><img src="./images/social-naver.svg" alt="네이버"></a></li>
-                    <li><a href="https://open.kakao.com/o/syb9n65g"><img src="./images/social-kakao.svg" alt="카카오"></a>
-                    </li>
-                    <li><a href="https://github.com/Lsj9907"><img src="./images/social-gitgub.svg" alt="깃허브"></a></li>
+                <!-- 포스트잇 -->
+                <ul class="post-iems flex-container">
+                    <li><img src="./images/pos-js.svg" alt="자바"></li>
+                    <li><img src="./images/ps-css.svg" alt="css"></li>
+                    <li><img src="./images/ps-re.svg" alt="리액트"></li>
                 </ul>
-                <div class="social-under"><img src="./images/social.png" alt="받침대">
-                </div>
             </div>
-            <!-- 포스터 -->
-            <div class="poster-container">
-                <img id="poster" src="./images/포스터.svg" alt="포스터1" onclick="changeposter()">
-            </div>
-        </div>
-    </div>
-
-    <!-- 아래쪽 영역 -->
-    <div class="under-wrapper grid-container">
-        <!-- 책상 영역 -->
-        <div class="desk-canvas">
-            <div class="computer flex-container">
-                <div class="light-wrapper flex-container" id="clickableImage">
-                    <!-- 기본 이미지 -->
-                    <div class="light-container2" id="light2"></div>
-                    <!-- Lottie 애니메이션을 표시할 컨테이너 -->
-                    <div class="light-container" id="light"></div>
-                </div>
-                <div class="computer-set">
-                    <div class="com-wrapper" id="hoverImage">
-                        <a href="./project/projectplace.html">
-                            <div class="computer-container" id="computer"></div>
-                        </a>
+            <!-- 소셜, 포스터 영역 -->
+            <div class="favorite-canvas flex-container">
+                <!-- 소셜 -->
+                <div class="sociaol-wrapper">
+                    <ul class="social-links grid-container">
+                        <li><a href="mailto:tnwlsdl972@naver.com"><img src="./images/social-naver.svg" alt="네이버"></a>
+                        </li>
+                        <li><a href="https://open.kakao.com/o/syb9n65g"><img src="./images/social-kakao.svg"
+                                    alt="카카오"></a>
+                        </li>
+                        <li><a href="https://github.com/Lsj9907"><img src="./images/social-gitgub.svg" alt="깃허브"></a>
+                        </li>
+                    </ul>
+                    <div class="social-under"><img src="./images/social.png" alt="받침대">
                     </div>
-                    <img src="./images/컴퓨터다리.svg" class="computer-leg" alt="컴퓨터다리">
+                </div>
+                <!-- 포스터 -->
+                <div class="poster-container flex-container">
+                    <img id="poster" src="./images/포스터.svg" alt="포스터1" onclick="changeposter()">
                 </div>
             </div>
-            <!-- 책상 -->
-            <div class="desk">
-                <img src="./images/desk.svg" alt="책상">
-            </div>
         </div>
-        <!-- 내 캐릭터  -->
-        <div class="dog">
-            <div class="eye-container flex-container">
-                <div class="eye ey1">
-                    <div class="pupil"></div>
+
+        <!-- 아래쪽 영역 -->
+        <div class="under-wrapper grid-container">
+            <!-- 책상 영역 -->
+            <div class="desk-canvas grid-container">
+                <div class="computer flex-container">
+                    <div class="light-wrapper flex-container" id="clickableImage">
+                        <div class="light-container2" id="light2"></div>
+                        <div class="light-container" id="light"></div>
+                    </div>
+
+                    <div class="computer-set flex-container">
+                        <div class="com-wrapper" id="hoverImage">
+                            <a href="./project/projectplace.html">
+                                <div class="computer-container" id="computer"></div>
+                            </a>
+                        </div>
+                        <img src="./images/컴퓨터다리.svg" class="computer-leg" alt="컴퓨터다리">
+                    </div>
                 </div>
-                <div class="eye ey2">
-                    <div class="pupil"></div>
+                <!-- 책상 -->
+                <div class="desk flex-container">
+                    <img src="./images/desk.svg" alt="책상">
                 </div>
             </div>
-            <div id="mydog" class="mydog"></div>
-        </div>
-        <!-- 강아지집, 꽃 -->
-        <div class="house-canvas flex-container">
-            <!-- 꽃 -->
-            <div class="flower-dance">
-                <div id="flower" class="flower"></div>
+            <!-- 내 캐릭터  -->
+            <div class="dog flex-container">
+                <div class="eye-container flex-container">
+                    <div class="eye ey1">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="eye ey2">
+                        <div class="pupil"></div>
+                    </div>
+                </div>
+                <div id="mydog" class="mydog flex-container">
+                </div>
             </div>
-            <!-- 강아지집 -->
-            <div class="dog-house">
-                <img id="doghouse" src="./images/강아지집1.svg" alt="이미지 1" onclick="changeImage()">
+            <!-- 강아지집, 꽃 -->
+            <div class="house-canvas flex-container">
+                <!-- 꽃 -->
+                <div class="flower-dance">
+                    <div id="flower" class="flower"></div>
+                </div>
+                <!-- 강아지집 -->
+                <div class="dog-house">
+                    <img id="doghouse" src="./images/강아지집1.svg" alt="이미지 1" onclick="changeImage()">
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <script>
         const mydog = lottie.loadAnimation({

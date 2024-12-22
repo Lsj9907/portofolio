@@ -1,12 +1,9 @@
 @charset "utf-8";
 
-
-body {
-    height: 100vh;
-    position: relative;
-}
-
 .backgound-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     font-family: var(--font-main-title);
     font-size: 11.5vw;
     color: var(--color-peach-light);
@@ -14,51 +11,54 @@ body {
     letter-spacing: -3px;
     text-transform: uppercase;
     line-height: 1;
-    height: fit-content;
-    box-sizing: border-box;
     padding-top: 14vh;
+    box-sizing: border-box;
 }
 
+main {
+    width: 100%;
+    height: 100%;
+}
 /**** 위쪽 그리드 영역****/
 .top-wrapper {
+    height: 50vh;
     width: 100%;
-    height: 40%;
     grid-template-columns: repeat(3, 1fr);
-    position: absolute;
-    top: 13%;
+    position: relative;
+    top: 0;
 }
 
 /**** 소개 액자 ****/
 .aboutme-line {
-    grid-template-rows: repeat(2, 1fr);
-    position: relative;
+    flex-direction: column;
+    place-content: flex-end;
+    gap: 2vw;
+    place-self: flex-end;
 }
-.about-container {
+.aboutme-line a {
     width: 15vw;
-    position: absolute;
-    right: 0;
-    top: 2vw;
+    display: flex;
 }
 .aboutme-line .post-iems {
+    position: relative;
+    width: 150px;
+    right: 3vw;
     gap: var(--menu-list-gap);
-    position: absolute;
-    bottom: 1.5vw;
-    right: 6vw;
 }
 
 
 /**** 소셜 ****/
 .favorite-canvas {
-    grid-template-rows: 1fr 1fr;
-    grid-column: 3 /4;
+    gap: 1vw;
+    grid-column: 3 / 4;
+    flex-direction: column;
     position: relative;
+    place-content: end;
 }
 
 .favorite-canvas .sociaol-wrapper {
-    grid-row: 1 / 2;
-    position: absolute;
-    bottom: -1vw;
-    left: 8vw;
+    place-content: center;
+    place-self: center;
 }
 
 .favorite-canvas .sociaol-wrapper .social-links {
@@ -68,9 +68,10 @@ body {
 }
 
 .poster-container {
-    position: absolute;
-    bottom: -2vw; left: 9vw;
+    position: relative;
     width: 5vw;
+    margin-left: 8vw;
+    bottom: -2vw;
 }
 
 .poster-container img {
@@ -81,10 +82,11 @@ body {
 /**** 아래쪽 영역 ****/
 
 .under-wrapper {
+    grid-row: 2 /3;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    height: 28%;
     position: relative;
+    bottom: 0;
 }
 
 .under-wrapper:after {
@@ -104,47 +106,50 @@ body {
 /**** 책상 영역 ****/
 .desk-canvas {
     grid-column: 1 / 2;
-    position: absolute;
-    bottom: 0;
-    left: 11vw;
 }
 
 .desk-canvas .computer {
-    position: relative;
+    justify-content: right;
 }
 
-#light {
+.light-wrapper {
     position: relative;
-    transform: translateY(2px);
-}
-
-.light-container {
+    bottom: -0.3vw;
     cursor: pointer;
 }
 
+.desk-canvas .computer .computer-set {
+    flex-direction: column;
+    position: relative;
+    bottom: -10px;
+    justify-content: flex-end;
+    align-items: center;
+}
 .desk-canvas .computer .computer-leg {
-    width: 4vw;
-    position: absolute;
-    bottom: -0.5vw;
-    right: 7vw;
+    width: 4.5vw;
     z-index: -99;
 }
-
 .desk-canvas .computer .computer-set a {
+    display: flex;
     z-index: 99999;
     width: 18vw;
-    display: flex;
-    position: absolute;
-    bottom: 0.9vw; right: -0.2vw;
+    place-items: end;
     transition: 0.3s;
+    position: relative;
+    bottom: -1.5vw;
 }
 .desk-canvas .computer .computer-set a:hover {
-    bottom: 1.5vw;
+    bottom: -0.6vw;
 }
 
 .desk {
-    width: 27vw;
+    display: flex;
+    width: 100%;
     z-index: 999999;
+    justify-content: end;
+}
+.desk img {
+    width: 90%;
 }
 
 
@@ -154,10 +159,19 @@ body {
     position: relative;
     grid-column: 2 / 3;
 }
-.eye-container {
-    z-index: 9999;
+.mydog {
     position: absolute;
-    left: 13.5vw; top:-3vw;
+    width: 27vw;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.eye-container {
+    position: absolute;
+    left: 50%;
+    top: 2.6vw;
+    transform: translateX(-50%);
+    z-index: 999;
 }
 .eye {
     width: 1.4rem;
@@ -180,27 +194,19 @@ body {
     transform: translate(-50%, -50%);
     transition: transform 0.1s;
 }
-.mydog {
-    position: absolute;
-    bottom: -0.5vw;
-    left: 0; right: 0; 
-    margin: 0 auto;
-    width: 25vw;
-    z-index: 9;
-}
+
+
 .house-canvas {
     grid-column: 3 / 4;
     position: relative;
+    align-items: end;
+    gap: 1vw;
 }
 .house-canvas .flower {
-    position: absolute;
-    bottom: -7px;
-    left: -2vw;
+    position: relative;
+    bottom: -0.3vw;
 }
 
 .house-canvas .dog-house {
-    position: absolute;
-    bottom: 0;
-    right: 14vw;
     cursor: pointer;
 }
