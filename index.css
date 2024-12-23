@@ -165,18 +165,18 @@ main {
     width: 460px;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 45px;
+    bottom: 30px;
 }
 .eye-container {
     position: fixed;
     left: 50%;
-    bottom: 290px;
+    bottom: 280px;
     transform: translateX(-50%);
     z-index: 999;
 }
 .eye {
-    width: 1.4rem;
-    height: 1.9rem;
+    width: 23px;
+    height: 33px;
     background-color: black;
     border-radius: 50%;
     position: relative;
@@ -185,8 +185,8 @@ main {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .pupil {
-    width: 0.9rem;
-    height: 0.9rem;
+    width: 15px;
+    height: 15px;
     background-color: white;
     border-radius: 50%;
     position: absolute;
