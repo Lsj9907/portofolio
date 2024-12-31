@@ -18,7 +18,7 @@ body{
 }
 
 .page {
-    width: 1400px;
+    min-width: 1400px;
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -29,11 +29,12 @@ body{
     position: relative;
     height: 100vh;
     background-image: linear-gradient(to top, #FFDDE6 0%, #EF99B1 120%);
+    place-content: center;
 }
 
 .page1 {
-    height: inherit;
     grid-template-columns: 50% 50%;
+    padding: 0 100px;
 }
 .page1 .txt-box {
     flex-direction: column;
@@ -68,7 +69,7 @@ body{
 
 .page1 .mockup-box .mockup1 {
     position: relative;
-    width: 35%;
+    width: 40%;
     z-index: 999;
     place-content: end;
 }
@@ -84,7 +85,8 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr 1fr;
     position: relative;
-    height: 120vh;
+    padding: 200px 100px;
+    gap: 80px 0;
 }
 
 .page2 .title-box {
@@ -113,8 +115,7 @@ body{
     border: 1px solid var(--color-smooth-black);
     border-left: none;
     border-right: none;
-    height: 260px;
-    margin: auto 0;
+    height: 250px;
 }
 
 .page2 .goal li {
@@ -151,11 +152,11 @@ body{
 }
 
 .page3 {
-    grid-template-columns: 1fr 1fr;
+    min-width: 1400px;
+    grid-template-columns: 55% 45%;
     grid-auto-rows: 1fr 1fr;
     position: relative;
-    gap: 120px;
-    padding: 120px 0;
+    padding: 200px 100px;
 }
 
 .page3 .backgound-box {
@@ -215,15 +216,12 @@ body{
 .page3 .persona {
     grid-column: 2 / 3;
     grid-row: span 2;
-    width: 100%;
 }
 
 .page3 .persona .persona-box1 {
-    width: 100%;
-    height: 600px;
     border-radius: 40px;
     box-shadow: 0 0 5px var(--color-peach-light);
-    padding: var(--about-padding-x) var(--about-padding-y);
+    padding: 50px 80px;
     text-align: center;
     flex-direction: column;
     line-height: 1.4;
@@ -267,7 +265,6 @@ body{
 
 .page3 .persona .persona-box2 {
     margin-top: var(--project-title-md);
-    width: 100%;
     height: 150px;
     border-radius: 40px;
     box-shadow: 0 0 5px var(--color-peach-light);
@@ -281,7 +278,8 @@ body{
 
 /* 네번째 페이지 */
 .page4 {
-    padding: 250px 0;
+    padding: 200px 100px;
+    min-width: 1400px;
 }
 
 .page4 .title-box {
@@ -310,7 +308,6 @@ body{
 
 .page .asistobe-box .asis-box .asis-warapper,
 .page .asistobe-box .tobe-box .tobe-warapper {
-    width: 95%;
     height: 350px;
     background-color: var(--color-white);
     border-radius: 40px;
@@ -332,11 +329,15 @@ body{
     transform: translateX(60px);
 }
 
+.page .asistobe-box .tobe-box{
+    place-content: end;
+    position: relative;
+}
 .page .asistobe-box .tobe-box .tobe-img-box {
     position: absolute;
     z-index: 999;
     top: 200px;
-    right: 565px;
+    left: -30px;
 }
 
 .page .asistobe-box .tobe-box .tobe-warapper {
@@ -346,7 +347,7 @@ body{
 
 /* 다섯번째 페이지 */
 .page5 {
-    padding: 130px 0;
+    padding: 200px 100px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 90%;
 }
@@ -541,7 +542,7 @@ body{
 
 /* 아홉번째 페이지 */
 .page9 {
-    padding: 120px 0;
+    padding: 200px 100px;
 }
 
 .page9 .result-box {
@@ -551,7 +552,7 @@ body{
 
 .page9 .result-box .result-item {
     width: 1450px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 345px);
 }
 
 .page9 .result-box .result-item-box {

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>project2</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../../assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../../assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../../assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../../assets/favicon/site.webmanifest" />
+    <!-- og -->
+    <!-- resect -->
+    <link rel="stylesheet" href="../../assets/styles/reset.min.css">
+    <!-- common -->
+    <link rel="stylesheet" href="../../assets/styles/common.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./project4.css">
+    <!-- script -->
+    <script src="../../assets/scripts/jquery-3.7.1.min.js"></script>
+    <script defer src="../../index.js"></script>
+</head>
+
+<body>
+    <!-- 메뉴 -->
+    <div class="menu-items">
+        <div class="menu-nav">
+            <div class="ch-btn">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+        </div>
+
+        <ul class="menu-list grid-container">
+            <li><a href="../../index.html"><img src="../../images/menu-home.svg" alt="home"></a></li>
+            <li><a href="../../about.html"><img src="../../images/menu-user.svg" alt="user"></a></li>
+            <li><a href="./../projectplace.html"><img src="../../images/menu-folder.svg" alt="folder"></a></li>
+            <li><a href="mailto:tnwlsdl972@naver.com"><img src="../../images/menu-mail.svg" alt="e-mail"></a></li>
+        </ul>
+    </div>
+
+    <!-- 메인 -->
+    <section class="main">
+        <div class=" txt-wrapper">
+            <h2>T1 Shop<br>
+                리디자인 & 퍼블리싱</h2>
+            <p>T1 Shop Responsive Web Redesign & Publishing
+                <br>100% 개인작업
+            </p>
+        </div>
+    </section>
+    <!-- overview -->
+    <section class="overview">
+        <h2 class="title-name"><span class="num">01</span>Overview</h2>
+        <p><strong>T1-SHOP</strong>는 <strong>T1 eSports</strong> 팀과 관련된 <strong>공식 쇼핑몰</strong>이며 팬들이 T1 팀의 다양한 <strong>공식 굿즈</strong>와 <strong>상품</strong>을 구매할 수 있도록 돕는 <strong>플랫폼</strong>입니다</p>
+        <p>이를 기반으로 <strong>T1 eSports의 브랜드 아이덴티티</strong>를 반영한 디자인과 <strong>GSAP 애니메이션</strong>을 활용하여<br>
+            사용자에게 <strong>일관된 경험</strong>과 <strong>다이나믹한 상호작용</strong>을 제공할 수 있도록 리디자인 진행했습니다</p>
+    </section>
+
+    <!-- Style guide -->
+    <section class="guide">
+        <h2 class="title-name"><span class="num">02</span>Style guide</h2>
+        <div class="guide-wrapper grid-container">
+            <div class="box flex-container">
+                <h3 class="sub-title">keywords</h3>
+                <img src="./images/키워드.svg" alt="키워드">
+            </div>
+            <div class="box flex-container">
+                <h3 class="sub-title">color</h3>
+                <img src="./images/컬러.svg" alt="컬러">
+            </div>
+            <div class="box flex-container">
+                <h3 class="sub-title">typography</h3>
+                <img src="./images/폰트.svg" alt="타이포">
+            </div>
+        </div>
+    </section>
+
+    <!-- 퍼블리싱 -->
+    <section class="publishing">
+        <h2 class="title-name"><span class="num">03</span>Publishing</h2>
+        <div class="puble-wrapper grid-container">
+            <div class="box">
+                <h3 class="sub-title">GSAP & JavaScript</h3>
+                <ul class="box-list flex-container">
+                    <li>GSAP 스크롤 애니메이션: 페이지 스크롤 시 텍스트와 이미지 요소가 부드럽게 페이드 인/아웃되며, 사용자 시선을 끄는 효과를 제공</li>
+                    <li>화면 오른쪽에 고정된 네비게이션 메뉴는 섹션 간 빠른 이동을 가능하게 하여 직관적이고 효율적인 사용자 경험을 제공</li>
+                    <li>주요 컨텐츠들이 스크롤에 따라 시간 차를 두고 나타나는 방식으로 설계되어 시각적 관심을 집중시키고 정보 전달 효과를 극대화함</li>
+                    <li>부드러운 애니메이션과 직관적 디자인 요소가 결합되어 방문자가 웹사이트에서 더 오랜 시간 머물도록 유도하며 전환율을 높이도록 제작</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 문제 솔루션 -->
+    <section class="problem">
+        <div class="txt-box">
+            <h2 class="title-name ti1"><span>P</span>roblem &</h2>
+            <h2 class="title-name ti2"><span>S</span>olution</h2>
+        </div>
+        <div class="ps1">
+            <h3 class="ps-title"># 내비게이션 hover 컨텐츠 외 opacity 적용 방법</h3>
+            <p>사용자가 특정 링크 위에 마우스를 올리면, 해당 링크 외 다른 링크의 투명도가 0.5로 변경, 마우스가 벗어나면 모든 링크의 투명도가 원래 상태인 1로 복원</p>
+            <p class="txt-push">&bull; CSS의 transition 속성을 활용하여 opacity 변화가 부드럽게 처리</p>
+            <p class="txt-push">&bull; 스크립트 사용으로 hover 시에 다른 섹션은 비활성화되어 하나의 섹션만 활성화</p>
+            <img src="./images/솔루션1.png" alt="솔루션1">
+        </div>
+        <div class="ps2">
+            <h3 class="ps-title"># 자동 회전과 마우스 인터랙션을 동기화하여 박스 활성화 및 흔들림 효과 제어 방법</h3>
+            <p>박스의 자동 활성화와 마우스 인터랙션 효과를 동기화하여 제어하는 문제 스크립트 사용</p>
+            <p class="txt-push">&bull;  setInterval로 1.8초마다 activateBox를 호출해 자동 회전을 구현</p>
+            <p class="txt-push">&bull; mouseenter 이벤트로 자동 회전을 중지하고 해당 박스에만 active와 shake 클래스 추가</p>
+            <p class="txt-push">&bull; mouseleave 이벤트로 active와 shake 클래스를 제거하고 자동 회전을 재시작</p>
+            <p class="txt-push">&bull;  activateBox 함수에서 현재 인덱스를 기반으로 박스를 순차적으로 활성화</p>
+            <img src="./images/솔루션2.png" alt="솔루션2">
+        </div>
+        <div class="ps3">
+            <h3 class="ps-title"># 스크롤 이벤트 기반 애니메이션의 반복적 동작 구현</h3>
+            <p>GSAP 사용으로 강력한 애니메이션 처리 도구로 CSS 애니메이션보다 더 부드러운 효과 제공</p>
+            <p class="txt-push">&bull; 화면에서 애니메이션 효과를 줄 수 있도록 .under-line 안에 .content 요소를 추가로 만들어, 이를 대상으로 애니메이션 효과를 설정
+            </p>
+            <p class="txt-push">&bull; GSAP을 사용하여 .content의 height 속성을 조정하며 부드러운 확장 효과를 만들며 화면에서 사라질 경우 다시 초기 상태로 리셋되도록 구성
+            <p class="txt-push">&bull; 애니메이션이 실행된 뒤 .content를 gsap.set으로 초기화하여 다음 진입 시 다시 애니메이션이 실행
+            </p>
+            <img src="./images/솔루션3.png" alt="솔루션3">
+        </div>
+    </section>
+    <section class="review">
+        <h2 class="title-name"><span class="num">04</span>Review</h2>
+        <div class="review-wrapper">
+            <div class="review-box">
+                <span><strong>1. E스포츠 팀 관련 프로젝트의 흥미와 창의적 도전</strong></span>
+                <p>이번 프로젝트는 내가 좋아하는 E스포츠 팀과 관련된 작업으로 큰 흥미를 느끼며 진행할 수 있었습니다<br>
+                    또한, 새로운 사이트 구성 시도를 통해 창의성을 발휘하고 몰입감을 더욱 높일 수 있었습니다.</p>
+            </div>
+            <div class="review-box">
+                <span><strong>2. CSS 애니메이션과 GSAP 결합을 통한 시각적 효과</strong></span>
+                <p>이번 기회에 GSAP뿐만 아니라 CSS 애니메이션을 많이 활용하게 되었으며, 이 조합이 사용자에게 더 많은 시각적 재미를 제공할 수 있다는 점을 깨달았습니다<br>
+                    CSS 애니메이션을 주로 사용했던 이번 프로젝트는 처음 시도였는데, GSAP와 결합하여 더 풍성한 효과를 연출할 수 있었습니다.</p>
+            </div>
+            <div class="review-box">
+                <span><strong>3. 스와이퍼와 지도 활용의 자신감 </strong></span>
+                <p>이번 프로젝트에서는 처음에 어려웠던 스와이퍼와 지도 활용을 성공적으로 적용할 수 있었습니다. 이전에는 이 두 가지 요소를 사용하기가 두려웠지만,<br>
+                    여러 번 시도한 결과 이번 프로젝트에서는 큰 어려움 없이 자연스럽게 사용할 수 있게 되었습니다. 이제는 스와이퍼와 지도를 자신 있게 활용할 수 있을 것 같습니다.</p>
+            </div>
+
+            <a href="./t1shop/index.html">퍼블리싱 보러가기</a>
+        </div>
+    </section>
+    <footer>
+        <p>tank you for watching!</p>
+    </footer>
+</body>
+
+</html>
