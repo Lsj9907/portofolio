@@ -165,12 +165,12 @@ main {
     width: 460px;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 30px;
+    bottom: 5px;
 }
 .eye-container {
     position: fixed;
     left: 50%;
-    bottom: 280px;
+    bottom: 250px;
     transform: translateX(-50%);
     z-index: 999;
 }
