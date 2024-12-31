@@ -600,17 +600,13 @@ header .header-container .global-menu {
 /* 콜라보 */
 .collabor {
     position: relative;
-    height: 450px;
     background-color: var(--color-peach);
     overflow: hidden;
     padding: 40px 20px 0 20px;
 }
 
 .collabor .collabor-wrapper {
-    position: relative;
-    z-index: 9;
-    grid-auto-rows: 1fr 1fr;
-    place-content: center;
+    flex-direction: column;
 }
 
 .collabor .collabor-wrapper h2 {
@@ -629,10 +625,12 @@ header .header-container .global-menu {
     display: inline-block;
     margin: 0 auto;
 }
-
-.collabor .collabor-img img{
-    position: absolute;
-    left: -40px;
+.collabor .collabor-img {
+    justify-content: center;
+    align-content: center;
+}
+.collabor .collabor-img img {
+    width: 275px;
 }
 
 .collabor .collabor-wrapper .email-wrapper #eMail {
@@ -1149,21 +1147,18 @@ footer .footer-global {
 
     .collabor {
         overflow: hidden;
-        padding: 0;
+        padding: 0 100px;
     }
 
     .collabor .collabor-wrapper {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 0;
-        position: static;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
     }
 
     .collabor .collabor-wrapper .collabor-txt {
         grid-column: 2 / 3;
-        width: 500px;
-        padding-left: 60px;
-        text-align: left;
-        margin-top: 10%;
+        grid-row: 1 /2;
     }
 
     .collabor .collabor-wrapper .collabor-txt .title {
@@ -1178,9 +1173,11 @@ footer .footer-global {
         width: 370px;
         height: 40px;
     }
-    .collabor .collabor-img img{
-        height: 450px;
-        left: -20%;
+    .collabor .collabor-img {
+        grid-column: 1 / 2;
+    }
+    .collabor .collabor-img img {
+        width: 100%;
     }
 
 

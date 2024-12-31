@@ -79,11 +79,11 @@ boxes.forEach(box => {
     boxes.forEach(box => {
       box.classList.remove('active');
       const svg = box.querySelector('svg');
-      if (svg) svg.classList.remove('shake'); // 흔들림 효과 제거
+      if (svg) svg.classList.remove('shake');
     });
     box.classList.add('active');
     const svg = box.querySelector('svg');
-    if (svg) svg.classList.add('shake'); // Hover 시 흔들림 효과 추가
+    if (svg) svg.classList.add('shake');
   });
 
   box.addEventListener('mouseleave', () => {
@@ -93,6 +93,10 @@ boxes.forEach(box => {
     startAutoRotate();
   });
 });
+
+
+
+
 
 
 let $text = $('.share-container1');
